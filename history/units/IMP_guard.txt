@@ -1,0 +1,169 @@
+division_template = {
+	name = "Astra Militarum"
+    
+    is_locked = no
+
+	regiments = {
+		imperial_infantry = { x = 0 y = 0 }
+		imperial_infantry = { x = 0 y = 1 }
+        imperial_infantry = { x = 1 y = 0 }
+		imperial_infantry = { x = 1 y = 1 }
+        imperial_infantry = { x = 0 y = 2 }
+		imperial_infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+    division= {
+        name = "1st Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "2nd Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "3rd Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "4th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "5th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "6th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "7th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "8th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "9th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "10th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "11th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "12th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "13th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "14th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "15th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "16th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "17th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "18th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+    division= {
+        name = "19th Terran Regiment"
+        location = 1961
+        division_template = "Astra Militarum"
+        start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+    }
+}

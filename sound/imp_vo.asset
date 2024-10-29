@@ -1,0 +1,474 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	IMP_infantry_idle
+	IMP_infantry_neutral_combat
+	IMP_infantry_positive_combat
+	IMP_infantry_retreat
+	IMP_infantry_move_out
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 0.0
+	postgain = 2.0
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+
+soundeffect = 
+{
+    name = "IMP_infantry_idle"
+    sounds = {
+        sound = idle_1
+        sound = idle_2
+        sound = idle_3
+        sound = idle_4
+        sound = idle_5
+        sound = idle_6
+        sound = idle_7
+        sound = idle_8
+        sound = idle_9
+        sound = idle_10
+        sound = idle_11
+        sound = idle_12
+        sound = idle_13
+        sound = idle_14
+		sound = idle_15
+        sound = idle_16
+        sound = idle_17
+        sound = idle_18
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+soundeffect = 
+{
+    name = "IMP_infantry_neutral_combat"
+    sounds = {
+        sound = attack_1
+        sound = attack_2
+        sound = attack_3
+        sound = attack_4
+        sound = attack_5
+        sound = attack_6
+        sound = attack_7
+        sound = attack_8
+        sound = attack_9
+        sound = attack_10
+        sound = attack_11
+        sound = attack_12
+        sound = attack_13
+        sound = attack_14
+        sound = attack_15
+        sound = attack_16
+        sound = attack_17
+        sound = attack_18
+        sound = attack_19
+        sound = attack_20
+        sound = attack_21
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "IMP_infantry_positive_combat"
+    sounds = {
+        sound = positive_1
+		sound = positive_2
+        sound = positive_3
+        sound = positive_4
+        sound = positive_5
+        sound = positive_6
+        sound = positive_7
+        sound = positive_8
+        sound = positive_9
+        sound = positive_10
+        sound = positive_11
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "IMP_infantry_retreat"
+    sounds = {
+        sound = retreat_1
+        sound = retreat_2
+        sound = retreat_3
+        sound = retreat_4
+        sound = retreat_5
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "IMP_infantry_move_out"
+    sounds = {
+        sound = move_1
+        sound = move_2
+        sound = move_3
+        sound = move_4
+        sound = move_5
+        sound = move_6
+		sound = move_7
+        sound = move_8
+		sound = move_9
+        sound = move_10
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.45
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+#############################
+sound = 
+{
+	name = "idle_1"
+	file = "IMP/idle_1.wav"
+}
+sound = 
+{
+	name = "idle_2"
+	file = "IMP/idle_2.wav"
+}
+sound = 
+{
+	name = "idle_3"
+	file = "IMP/idle_3.wav"
+}
+sound = 
+{
+	name = "idle_4"
+	file = "IMP/idle_4.wav"
+}
+sound = 
+{
+	name = "idle_5"
+	file = "IMP/idle_5.wav"
+}
+sound = 
+{
+	name = "idle_6"
+	file = "IMP/idle_6.wav"
+}
+sound = 
+{
+	name = "idle_7"
+	file = "IMP/idle_7.wav"
+}
+sound = 
+{
+	name = "idle_8"
+	file = "IMP/idle_8.wav"
+}
+sound = 
+{
+	name = "idle_9"
+	file = "IMP/idle_9.wav"
+}
+sound = 
+{
+	name = "idle_10"
+	file = "IMP/idle_10.wav"
+}
+sound = 
+{
+	name = "idle_11"
+	file = "IMP/idle_11.wav"
+}
+sound = 
+{
+	name = "idle_12"
+	file = "IMP/idle_12.wav"
+}
+sound = 
+{
+	name = "idle_13"
+	file = "IMP/idle_13.wav"
+}
+sound = 
+{
+	name = "idle_14"
+	file = "IMP/idle_14.wav"
+}
+sound = 
+{
+	name = "idle_15"
+	file = "IMP/idle_15.wav"
+}
+sound = 
+{
+	name = "idle_16"
+	file = "IMP/idle_16.wav"
+}
+sound = 
+{
+	name = "idle_17"
+	file = "IMP/idle_17.wav"
+}
+sound = 
+{
+	name = "idle_18"
+	file = "IMP/idle_18.wav"
+}
+
+sound = 
+{
+	name = "attack_1"
+	file = "IMP/attack_1.wav"
+}
+sound = 
+{
+	name = "attack_2"
+	file = "IMP/attack_2.wav"
+}
+sound = 
+{
+	name = "attack_3"
+	file = "IMP/attack_3.wav"
+}
+sound = 
+{
+	name = "attack_4"
+	file = "IMP/attack_4.wav"
+}
+sound = 
+{
+	name = "attack_5"
+	file = "IMP/attack_5.wav"
+}
+sound = 
+{
+	name = "attack_6"
+	file = "IMP/attack_6.wav"
+}
+sound = 
+{
+	name = "attack_7"
+	file = "IMP/attack_7.wav"
+}
+sound = 
+{
+	name = "attack_8"
+	file = "IMP/attack_8.wav"
+}
+sound = 
+{
+	name = "attack_9"
+	file = "IMP/attack_9.wav"
+}
+sound = 
+{
+	name = "attack_10"
+	file = "IMP/attack_10.wav"
+}
+sound = 
+{
+	name = "attack_11"
+	file = "IMP/attack_11.wav"
+}
+sound = 
+{
+	name = "attack_12"
+	file = "IMP/attack_12.wav"
+}
+sound = 
+{
+	name = "attack_13"
+	file = "IMP/attack_13.wav"
+}
+sound = 
+{
+	name = "attack_14"
+	file = "IMP/attack_14.wav"
+}
+sound = 
+{
+	name = "attack_15"
+	file = "IMP/attack_15.wav"
+}
+sound = 
+{
+	name = "attack_16"
+	file = "IMP/attack_16.wav"
+}
+sound = 
+{
+	name = "attack_17"
+	file = "IMP/attack_17.wav"
+}
+sound = 
+{
+	name = "attack_18"
+	file = "IMP/attack_18.wav"
+}
+sound = 
+{
+	name = "attack_19"
+	file = "IMP/attack_19.wav"
+}
+sound = 
+{
+	name = "attack_20"
+	file = "IMP/attack_20.wav"
+}
+sound = 
+{
+	name = "attack_21"
+	file = "IMP/attack_21.wav"
+}
+
+sound = 
+{
+	name = "move_1"
+	file = "IMP/move_1.wav"
+}
+sound = 
+{
+	name = "move_2"
+	file = "IMP/move_2.wav"
+}
+sound = 
+{
+	name = "move_3"
+	file = "IMP/move_3.wav"
+}
+sound = 
+{
+	name = "move_4"
+	file = "IMP/move_4.wav"
+}
+sound = 
+{
+	name = "move_5"
+	file = "IMP/move_5.wav"
+}
+sound = 
+{
+	name = "move_6"
+	file = "IMP/move_6.wav"
+}
+sound = 
+{
+	name = "move_7"
+	file = "IMP/move_7.wav"
+}
+sound = 
+{
+	name = "move_8"
+	file = "IMP/move_8.wav"
+}
+sound = 
+{
+	name = "move_9"
+	file = "IMP/move_7.wav"
+}
+sound = 
+{
+	name = "move_10"
+	file = "IMP/move_8.wav"
+}
+
+sound = 
+{
+	name = "retreat_1"
+	file = "IMP/retreat_1.wav"
+}
+sound = 
+{
+	name = "retreat_2"
+	file = "IMP/retreat_2.wav"
+}
+sound = 
+{
+	name = "retreat_3"
+	file = "IMP/retreat_3.wav"
+}
+sound = 
+{
+	name = "retreat_4"
+	file = "IMP/retreat_4.wav"
+}
+sound = 
+{
+	name = "retreat_5"
+	file = "IMP/retreat_5.wav"
+}
+
+sound = 
+{
+	name = "positive_1"
+	file = "IMP/positive_1.wav"
+}
+sound = 
+{
+	name = "positive_2"
+	file = "IMP/positive_2.wav"
+}
+sound = 
+{
+	name = "positive_3"
+	file = "IMP/positive_3.wav"
+}
+sound = 
+{
+	name = "positive_4"
+	file = "IMP/positive_4.wav"
+}
+sound = 
+{
+	name = "positive_5"
+	file = "IMP/positive_5.wav"
+}
+sound = 
+{
+	name = "positive_6"
+	file = "IMP/positive_6.wav"
+}
+sound = 
+{
+	name = "positive_7"
+	file = "IMP/positive_7.wav"
+}
+sound = 
+{
+	name = "positive_8"
+	file = "IMP/positive_8.wav"
+}
+sound = 
+{
+	name = "positive_9"
+	file = "IMP/positive_9.wav"
+}
+sound = 
+{
+	name = "positive_10"
+	file = "IMP/positive_10.wav"
+}
+sound = 
+{
+	name = "positive_11"
+	file = "IMP/positive_11.wav"
+}

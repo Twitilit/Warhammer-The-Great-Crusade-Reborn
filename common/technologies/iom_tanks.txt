@@ -1,0 +1,2356 @@
+technologies = {
+
+
+	@1918 = 0
+	@1934 = 2
+	@1935 = 3
+	@1936 = 4
+	@1937 = 5
+	@1938 = 5
+	@1939 = 7
+	@1940 = 7
+	@1941 = 8
+	@1942 = 9
+	@1943 = 10
+	@1944 = 11
+	@1945 = 12
+	@1946 = 20
+
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+
+	imp_basic_light_tank_chassis = { #Panzer I
+
+		enable_equipments = {
+			iom_light_tank_chassis_1
+			iom_light_tank_destroyer_chassis_1
+			iom_light_tank_artillery_chassis_1
+			iom_light_tank_aa_chassis_1
+		}
+		enable_subunits = {
+			iom_light_armor
+		}
+		enable_equipment_modules = {
+			tank_light_one_man_tank_turret
+			tank_bogie_suspension
+			tank_torsion_bar_suspension
+			tank_christie_suspension
+			ablative_armor
+			ceramic_armor
+			martian_template_engine
+			engine_model_lucius
+			imp_tank_bolt_gun
+			imp_tank_heavy_stabber
+
+		}
+
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = iom_light_armor }
+			NOT = {	has_template_containing_unit = iom_heavy_armor }
+			NOT = {	has_template_containing_unit = iom_medium_armor }
+		}
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_iom_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_iom_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = imp_improved_light_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1934
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = -2 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
+	imp_improved_light_tank_chassis = { #Panzer II
+
+		enable_equipments = {
+			iom_light_tank_chassis_2
+			iom_light_tank_destroyer_chassis_2
+			iom_light_tank_artillery_chassis_2
+			iom_light_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			imp_tank_two_bolt_gun
+			tank_light_two_man_tank_turret
+			tank_light_fixed_superstructure_turret
+		}
+
+		path = {
+			leads_to_tech = imp_advanced_light_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = -2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+				NOT = {
+					AND = {
+						tag = JAP
+						num_of_military_factories < 50
+					}
+				}
+			}
+			modifier = {
+				is_major = yes
+				not = { tag = JAP }
+				has_war = yes
+				factor = 10 #you are embarassing yourself
+			}
+			modifier = {
+				tag = SOV
+				factor = 3
+			}
+			modifier = {
+				factor = 3
+				# Matilda II was designed and entered production in 1937
+				tag = ENG
+				date > "1936.9.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		on_research_complete = {
+			if = { #Italian templates
+				limit = {
+					original_tag = ITA
+					has_completed_focus = ITA_italian_tankettes
+				}
+				ITA_add_improved_light_tank_templates = yes
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
+	imp_advanced_light_tank_chassis = { #Leopard
+
+		enable_equipments = {
+			iom_light_tank_chassis_3
+			iom_light_tank_destroyer_chassis_3
+			iom_light_tank_artillery_chassis_3
+			iom_light_tank_aa_chassis_3
+		}
+
+		research_cost = 2
+		start_year = 1943
+
+		enable_equipment_modules = {
+			tank_light_three_man_tank_turret
+		}
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = -2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2  # Minors prefer light tanks
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
+	imp_basic_medium_tank_chassis = { #Panzer III
+
+		enable_equipments = {
+			iom_medium_tank_chassis_1
+			iom_medium_tank_destroyer_chassis_1
+			iom_medium_tank_artillery_chassis_1
+			iom_medium_tank_aa_chassis_1
+		}
+
+		enable_equipment_modules = {
+			imp_tank_leman_gun
+			tank_medium_one_man_tank_turret
+			tank_interleaved_suspension
+			imp_dozer_blade
+		}
+
+		enable_subunits = {
+			iom_medium_armor
+		}
+
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = iom_light_armor }
+			NOT = {	has_template_containing_unit = iom_heavy_armor }
+			NOT = {	has_template_containing_unit = iom_medium_armor }
+		}
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_iom_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_iom_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = imp_improved_medium_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 1 y = @1937 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				is_major = yes
+				NOT = {
+					AND = {
+						tag = JAP
+						num_of_military_factories < 50
+					}
+				}
+				date > "1938.1.1"
+			}
+			modifier = {
+				tag = SOV
+				factor = 1.5
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 15.0
+				tag = GER
+				has_opinion_modifier = sov_ger_treaty
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+
+
+
+	imp_improved_medium_tank_chassis = { #Panzer IV
+
+		enable_equipments = {
+			iom_medium_tank_chassis_2
+			iom_medium_tank_destroyer_chassis_2
+			iom_medium_tank_artillery_chassis_2
+			iom_medium_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			imp_tank_leman_gun_2
+			tank_medium_two_man_tank_turret
+			tank_medium_fixed_superstructure_turret
+		}
+
+		path = {
+			leads_to_tech = imp_advanced_medium_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 1 y = @1942 }
+		}
+
+		on_research_complete = {
+			if = { #Italian templates
+				limit = {
+					original_tag = ITA
+					OR = {
+						has_completed_focus = ITA_end_fiat_ansaldo_duopoly
+						has_completed_focus = ITA_modernize_ansaldo_facilities
+					}
+				}
+				ITA_add_improved_medium_tank_templates = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+
+			modifier = {
+				factor = 2
+				is_major = yes
+				NOT = {
+					AND = {
+						tag = JAP
+						num_of_military_factories < 50
+					}
+				}
+			}
+			modifier = {
+				date < "1941.1.1"
+				factor = 0.3
+			}
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+
+	imp_advanced_medium_tank_chassis = { #Panther
+
+		enable_equipments = {
+			iom_medium_tank_chassis_3
+			iom_medium_tank_destroyer_chassis_3
+			iom_medium_tank_artillery_chassis_3
+			iom_medium_tank_aa_chassis_3
+		}
+
+		enable_equipment_modules = {
+			imp_tank_leman_gun_3
+			tank_medium_three_man_tank_turret
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 1 y = @1945 }
+		}
+
+		on_research_complete = {
+			if = { #Italian templates
+				limit = {
+					original_tag = ITA
+					has_completed_focus = ITA_ferrea_mole_ferreo_cuore
+				}
+				ITA_add_advanced_medium_tank_templates = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+	}
+
+	
+
+
+	imp_basic_heavy_tank_chassis = { #Grosstraktor
+
+		enable_equipments = {
+			iom_heavy_tank_chassis_1
+			iom_heavy_tank_destroyer_chassis_1
+			iom_heavy_tank_artillery_chassis_1
+			iom_heavy_tank_aa_chassis_1
+		}
+
+		enable_subunits = {
+			iom_heavy_armor
+		}
+
+		enable_equipment_modules = {
+			imp_tank_vanqushier_gun
+			tank_heavy_two_man_tank_turret
+		}
+
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = iom_light_armor }
+			NOT = {	has_template_containing_unit = iom_heavy_armor }
+			NOT = {	has_template_containing_unit = iom_medium_armor }
+		}
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_iom_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_iom_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = imp_improved_heavy_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1934
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 5 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+			modifier = {
+				tag = FRA
+				factor = 3
+			}
+			modifier = {
+				tag = JAP
+				num_of_military_factories < 100
+				factor = 0
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_improved_heavy_tank_chassis = { #Tiger
+
+		enable_equipments = {
+			iom_heavy_tank_chassis_2
+			iom_heavy_tank_destroyer_chassis_2
+			iom_heavy_tank_artillery_chassis_2
+			iom_heavy_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			imp_tank_vanqushier_gun_2
+			tank_heavy_three_man_tank_turret
+		}
+
+		path = {
+			leads_to_tech = imp_advanced_heavy_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = imp_super_heavy_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1940
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 5 y = @1940 }
+		}
+
+		on_research_complete = {
+		}
+
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				tag = JAP
+				num_of_military_factories < 100
+				factor = 0
+			}
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+
+	imp_advanced_heavy_tank_chassis = { #King Tiger
+
+		enable_equipments = {
+			iom_heavy_tank_chassis_3
+			iom_heavy_tank_destroyer_chassis_3
+			iom_heavy_tank_artillery_chassis_3
+			iom_heavy_tank_aa_chassis_3
+		}
+
+		enable_equipment_modules = {
+			imp_tank_vanqushier_gun_3
+			tank_heavy_fixed_superstructure_turret
+			
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 5 y = @1945 }
+		}
+
+		on_research_complete = {
+		}
+
+		ai_will_do = {
+			factor = 0.8
+
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_super_heavy_tank_chassis = { #Maus
+
+		enable_equipments = {
+			iom_super_heavy_tank_chassis_1
+			iom_super_heavy_tank_destroyer_chassis_1
+			iom_super_heavy_tank_artillery_chassis_1
+			iom_super_heavy_tank_aa_chassis_1
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_super_heavy_tank_chassis_2
+		}
+
+		enable_subunits = {
+			iom_super_heavy_armor
+		}
+
+		enable_equipment_modules = {
+			tank_super_heavy_three_man_tank_turret
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 8 y = @1943 }
+		}
+
+		on_research_complete = {
+		}
+
+		ai_will_do = {
+			factor = 0 # Hitler cries on the inside
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_super_heavy_tank_chassis_2 = { #Maus
+
+		enable_equipments = {
+			iom_super_heavy_tank_chassis_2
+			iom_super_heavy_tank_destroyer_chassis_2
+			iom_super_heavy_tank_artillery_chassis_2
+			iom_super_heavy_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			tank_super_heavy_four_man_tank_turret
+		}
+
+		research_cost = 2.5
+		start_year = 1945
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 8 y = @1945 }
+		}
+
+		on_research_complete = {
+		}
+
+		ai_will_do = {
+			factor = 0 # Hitler cries on the inside
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_armor_tech_1 = {
+		enable_equipment_modules = {
+			adamantium_coating
+		}
+
+		path = {
+			leads_to_tech = imp_armor_tech_2
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 3 y = @1935 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_armor_tech_2 = {
+
+		enable_equipment_modules = {
+			armor_skirts
+		}
+		path = {
+			leads_to_tech = imp_armor_tech_3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 3 y = @1938 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_armor_tech_3 = {
+		enable_equipment_modules = {
+			#field_hexagonal_armor
+		}
+
+		path = {
+			leads_to_tech = imp_armor_tech_4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_3_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 3 y = @1941 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_armor_tech_4 = {
+
+		research_cost = 1
+		start_year = 1944
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 3 y = @1944 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_4_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_engine_tech_1 = {
+		enable_equipment_modules = {
+			high_power_plasma_reactor
+		}
+
+		path = {
+			leads_to_tech = imp_engine_tech_2
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_1_tt
+		}
+		show_effect_as_desc = yes
+		research_cost = 1
+		start_year = 1934
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 2 y = @1935 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_engine_tech_2 = {
+
+
+		path = {
+			leads_to_tech = imp_engine_tech_3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 2 y = @1938 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_engine_tech_3 = {
+		enable_equipment_modules = {
+			machine_spirit_integration
+		}
+
+		path = {
+			leads_to_tech = imp_engine_tech_4
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_3_tt
+		}
+		show_effect_as_desc = yes
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 2 y = @1941 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_engine_tech_4 = {
+
+		research_cost = 1
+		start_year = 1944
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 2 y = @1944 }
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_4_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_plasma_1 = {
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 20 y = 2 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_plasma_gun
+			imp_tank_small_plasma_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_plasma_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_plasma_2 = {
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 20 y = 4 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_plasma_gun_1
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_plasma_3
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_big_plasma_1
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_plasma_3 = {
+
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 20 y = 6 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_plasma_gun_2
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_big_plasma_1 = {
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 18 y = 4 }
+		}
+		enable_equipment_modules = {
+			imp_executioner_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_big_plasma_2
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_big_plasma_2 = {
+
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 18 y = 6 }
+		}
+		enable_equipment_modules = {
+			imp_executioner_gun_2
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_big_plasma_3
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_big_plasma_3 = {
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 18 y = 8 }
+		}
+		enable_equipment_modules = {
+			imp_executioner_gun_3
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_flamer_1 = {
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 16 y = 2 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_flame_gun
+			imp_tank_small_flame_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_flamer_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_flamer_2 = {
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 16 y = 4 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_flame_gun_1
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_flamer_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_flamer_3 = {
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 16 y = 6 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_flame_gun_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_melta_1 = {
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 22 y = 2 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_melta_gun
+			imp_tank_small_melta_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_melta_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_melta_2 = {
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 22 y = 4 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_melta_gun_1
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_melta_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_melta_3 = {
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 22 y = 6 }
+		}
+		enable_equipment_modules = {
+			imp_tank_main_melta_gun_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_conqueror_1 = {
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 24 y = 2 }
+		}
+		enable_equipment_modules = {
+			imp_conqueror_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_conqueror_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_conqueror_2 = {
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 24 y = 4 }
+		}
+		enable_equipment_modules = {
+			imp_conqueror_gun_2
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_conqueror_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_conqueror_3 = {
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 24 y = 6 }
+		}
+		enable_equipment_modules = {
+			imp_conqueror_gun_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_exterminator_1 = {
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 26 y = 2 }
+		}
+		enable_equipment_modules = {
+			imp_exterminator_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_exterminator_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_exterminator_2 = {
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 26 y = 4 }
+		}
+		enable_equipment_modules = {
+			imp_exterminator_gun_2
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_exterminator_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_exterminator_3 = {
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 26 y = 6 }
+		}
+		enable_equipment_modules = {
+			imp_exterminator_gun_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+	imp_punisher_1 = {
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 22 y = 8 }
+		}
+		enable_equipment_modules = {
+			imp_punisher_gun
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_punisher_2
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_punisher_2 = {
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 24 y = 8 }
+		}
+		enable_equipment_modules = {
+			imp_punisher_gun_2
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = imp_punisher_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	imp_punisher_3 = {
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = imp_nsb_armour_folder
+			position = { x = 26 y = 8 }
+		}
+		enable_equipment_modules = {
+			imp_punisher_gun_3
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			mio_cat_tech_all_armor_and_modules
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+
+}

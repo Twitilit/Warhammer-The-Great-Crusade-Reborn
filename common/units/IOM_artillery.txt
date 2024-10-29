@@ -1,0 +1,576 @@
+sub_units = {
+	imp_artillery = {
+		abbreviation = "IRT"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+			category_artillery
+			category_support_artillery
+		}
+
+
+		combat_width = 0
+
+		need = {
+			iom_artillery_equipment = 12
+		}
+		manpower = 300
+		training_time = 120
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		weight = 0.1
+		
+		supply_consumption = 0.16
+
+		# Support nerfs to combat abilities
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
+
+
+		can_be_parachuted = yes
+	}
+
+	imp_artillery_brigade = {
+		abbreviation = "ART"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+
+		manpower = 500
+		need = {
+			iom_artillery_equipment = 36
+		}
+		
+		max_strength = 0.6
+		max_organisation = 0
+		default_morale = 0.1
+		training_time = 120
+		weight = 0.5
+		supply_consumption = 0.21
+
+		#Line artillery bonuses
+		# soft_attack = 0.25
+		
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	imp_mot_artillery_brigade = {
+		abbreviation = "MRT"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			motorized
+			artillery
+		}
+
+		group = mobile_combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		transport = imp_motorized_equipment
+		manpower = 500
+
+		essential = {
+			imp_motorized_equipment
+		}
+
+		need = {
+			iom_artillery_equipment = 36
+			imp_motorized_equipment = 36
+		}
+		
+		max_strength = 0.6
+		max_organisation = 0
+		default_morale = 0.1
+		training_time = 120
+		weight = 0.5
+		supply_consumption = 0.25
+		
+		forest = {
+			attack = -0.2
+			movement = -0.5
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.5
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	###Anti-air
+	imp_anti_air = {
+		abbreviation = "AA"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_army
+			category_anti_air
+		}
+
+		
+		combat_width = 0
+		training_time = 120
+
+		need = {
+			iom_anti_air_equipment = 20
+		}
+
+		can_be_parachuted = yes
+		
+		#Size Definitions
+		max_strength = 0.2
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 300
+		weight = 0.1
+		
+        supply_consumption = 0.1
+
+		# Support nerfs to combat abilities
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
+		air_attack = -0.2
+
+	}
+
+	imp_anti_air_brigade = {
+		abbreviation = "ANA"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 301
+		ai_priority = 10
+		active = yes
+
+		type = {
+			infantry
+			anti_air
+		}
+		
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_anti_air
+		}		
+		
+		combat_width = 1
+		
+		#Size Definitions
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.6
+		manpower = 500
+		training_time = 120
+		weight = 0.5
+		
+		supply_consumption = 0.1
+
+		need = {
+			iom_anti_air_equipment = 30
+		}
+
+		forest = {
+			attack = -0.1
+			movement = -0.1
+		}
+
+		jungle = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	imp_mot_anti_air_brigade = {
+		abbreviation = "MAA"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 301
+		ai_priority = 10
+		active = yes
+
+		type = {
+			motorized
+			anti_air
+		}
+		
+		group = mobile_combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+		}		
+		
+		combat_width = 1
+		
+		#Size Definitions
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.6
+		manpower = 500
+		training_time = 120
+		weight = 0.5
+		
+		supply_consumption = 0.15
+		transport = imp_motorized_equipment
+
+		essential = {
+			imp_motorized_equipment
+		}
+
+		need = {
+			iom_anti_air_equipment = 30
+			imp_motorized_equipment = 50
+		}
+
+		forest = {
+			attack = -0.1
+			movement = -0.5
+		}
+
+		jungle = {
+			attack = -0.2
+			movement = -0.5
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	###Anti-tank
+	imp_anti_tank = {
+		abbreviation = "AT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+
+		combat_width = 0
+
+		need = {
+			iom_anti_tank_equipment = 24
+		}
+		manpower = 300
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		training_time = 120
+		weight = 0.1
+
+		can_be_parachuted = yes
+		
+		supply_consumption = 0.08
+
+		# Support nerfs to combat abilities
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
+		hard_attack = -0.5
+		ap_attack = -0.15
+	}
+	imp_anti_tank_brigade = {
+		abbreviation = "ANT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 1197
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			anti_tank
+		}
+		
+		group = combat_support
+		
+		categories = {
+			category_front_line
+			category_army
+			category_line_artillery
+		}		
+		
+		combat_width = 1
+
+		need = {
+			iom_anti_tank_equipment = 36
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0.6
+		training_time = 120
+		weight = 0.5
+
+		supply_consumption = 0.1
+
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	imp_mot_anti_tank_brigade = {
+		abbreviation = "MAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 1197
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			motorized
+			anti_tank
+		}
+		
+		group = mobile_combat_support
+		
+		categories = {
+			category_front_line
+			category_army
+			category_line_artillery
+		}		
+		
+		combat_width = 1
+		transport = imp_motorized_equipment
+
+		essential = {
+			imp_motorized_equipment
+		}
+		need = {
+			iom_anti_tank_equipment = 36
+			imp_motorized_equipment = 50
+		}
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0.6
+		training_time = 120
+		weight = 0.5
+
+		supply_consumption = 0.15
+
+		forest = {
+			attack = -0.2
+			movement = -0.5
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.5
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+}

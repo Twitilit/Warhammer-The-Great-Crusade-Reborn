@@ -1,0 +1,1431 @@
+#engineer_officer
+#armor_officer
+#cavalry_officer
+#old_guard
+#brilliant_strategist
+#inflexible_strategist
+#politically_connected
+#war_hero
+#career_officer
+#media_personality
+#bearer_of_artillery
+#infantry_officer
+#logistics_wizard
+#offensive_doctrine
+#defensive_doctrine
+#fast_planner
+#thorough_planner
+#unyielding_defender
+#aggressive_assaulter
+#organisational_leader
+#inspirational_leader
+#expert_delegator
+#organizer
+#cavalry_leader
+#infantry_leader
+#skilled_staffer
+#trickster
+#winter_specialist
+#adaptable
+#winter_expert
+#trait_engineer
+#panzer_leader
+#commando
+#desert_fox
+#swamp_fox
+#trait_mountaineer
+#hill_fighter
+#jungle_rat
+#ranger
+#urban_assault_specialist
+#naval_invader
+characters = {
+    ###Ultramarins
+	IMP_Guilliman = {
+		name = IMP_Guilliman
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Guilliman"
+            }
+        }
+        field_marshal = {
+            traits = { brilliant_strategist logistics_wizard fast_planner organizer infantry_leader politically_connected offensive_doctrine expert_delegator urban_assault_specialist inspirational_leader }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 4
+            planning_skill = 10
+            logistics_skill = 8
+        }
+	}
+    IMP_Victorion_Rex = {
+        name = IMP_Victorion_Rex
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Victorion_Rex"
+            }
+        }
+        corps_commander = {
+            traits = { urban_assault_specialist }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 5
+        }
+    }
+    IMP_Gaius_Livius = {
+        name = IMP_Gaius_Livius
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Gaius_Livius"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Sons of Horus
+	IMP_Horus = {
+		name = IMP_Horus
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Horus"
+            }
+        }
+        field_marshal = {
+            traits = { brilliant_strategist fast_planner offensive_doctrine aggressive_assaulter war_hero expert_delegator panzer_leader cavalry_leader organisational_leader }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 10
+            planning_skill = 10
+            logistics_skill = 10
+        }
+	}
+    IMP_Marcos_Veturius = {
+        name = IMP_Marcos_Veturius
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Marcos_Veturius"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Rennicor_Tull = {
+        name = IMP_Rennicor_Tull
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Rennicor_Tull"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Alpha Legion
+	IMP_Alpharius = {
+		name = IMP_Alpharius
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Alpharius"
+            }
+        }
+        field_marshal = {
+            traits = { trickster fast_planner commando brilliant_strategist urban_assault_specialist offensive_doctrine naval_invader }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+        }
+	}
+    IMP_Lyren_Altaris = {
+        name = IMP_Lyren_Altaris
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Lyren_Altaris"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Terax_Anonis = {
+        name = IMP_Terax_Anonis
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Terax_Anonis"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ### World Eaters
+	IMP_Angron = {
+		name = IMP_Angron
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Angron"
+            }
+        }
+        field_marshal = {
+            traits = { aggressive_assaulter infantry_officer war_hero offensive_doctrine cavalry_leader urban_assault_specialist naval_invader }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+        }
+	}
+    IMP_Targar_the_Predator = {
+        name = IMP_Targar_the_Predator
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Targar_the_Predator"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Malkor_Bloodblade = {
+        name = IMP_Malkor_Bloodblade
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Malkor_Bloodblade"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ### Raven Guard
+	IMP_Corax = {
+		name = IMP_Corax
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Corax"
+            }
+        }
+        field_marshal = {
+            traits = { fast_planner trickster commando brilliant_strategist offensive_doctrine war_hero urban_assault_specialist ranger hill_fighter }
+            skill = 5
+            attack_skill = 8
+            defense_skill = 3
+            planning_skill = 9
+            logistics_skill = 5
+        }
+	}
+    IMP_Ernek_the_Raven_Bearer = {
+        name = IMP_Ernek_the_Raven_Bearer
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Ernek_the_Raven_Bearer"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Sindan_Shadowstep = {
+        name = IMP_Sindan_Shadowstep
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Sindan_Shadowstep"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ### Iron Hands
+	IMP_FerrusManus = {
+		name = IMP_FerrusManus
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_FerrusManus"
+            }
+        }
+        field_marshal = {
+            traits = { engineer_officer armor_officer defensive_doctrine unyielding_defender trait_engineer brilliant_strategist panzer_leader logistics_wizard media_personality }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 5
+        }
+	}
+    IMP_Marcus_Ferrit = {
+        name = IMP_Marcus_Ferrit
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Marcus_Ferrit"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Xander_Brant = {
+        name = IMP_Xander_Brant
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Xander_Brant"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ### Emperor's Children
+	IMP_Fulgrim = {
+		name = IMP_Fulgrim
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Fulgrim"
+            }
+        }
+        field_marshal = {
+            traits = { brilliant_strategist fast_planner infantry_leader expert_delegator cavalry_leader media_personality naval_invader desert_fox }
+            skill = 5
+            attack_skill = 7
+            defense_skill = 5
+            planning_skill = 8
+            logistics_skill = 6
+        }
+	}
+    IMP_Celestine_Flavius = {
+        name = IMP_Celestine_Flavius
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Celestine_Flavius"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Galerius_Quirin = {
+        name = IMP_Galerius_Quirin
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Galerius_Quirin"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ### White Scars
+	IMP_Jaghatai_Khan = {
+		name = IMP_Jaghatai_Khan
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Jaghatai_Khan"
+            }
+        }
+        field_marshal = {
+            traits = { cavalry_leader fast_planner aggressive_assaulter brilliant_strategist war_hero ranger trait_mountaineer desert_fox urban_assault_specialist }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 10
+        }
+	}
+    IMP_Karag_Darkstorm = {
+        name = IMP_Karag_Darkstorm
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Karag_Darkstorm"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Orkin_Hakkor = {
+        name = IMP_Orkin_Hakkor
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Orkin_Hakkor"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Night Lords
+	IMP_KonradCurze = {
+		name = IMP_KonradCurze
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_KonradCurze"
+            }
+        }
+        field_marshal = {
+            traits = { trickster fast_planner fast_planner aggressive_assaulter brilliant_strategist war_hero offensive_doctrine commando urban_assault_specialist jungle_rat }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 4
+        }
+	}
+    IMP_Malascar_the_Shadow = {
+        name = IMP_Malascar_the_Shadow
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Malascar_the_Shadow"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Zakharia_Bloodblade = {
+        name = IMP_Zakharia_Bloodblade
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Zakharia_Bloodblade"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Space Wolves
+	IMP_LemanRuss = {
+		name = IMP_LemanRuss
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_LemanRuss"
+            }
+        }
+        field_marshal = {
+            traits = { aggressive_assaulter cavalry_leader jungle_rat brilliant_strategist offensive_doctrine war_hero naval_invader desert_fox }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 5
+        }
+	}
+    IMP_Halvard_Snowfang = {
+        name = IMP_Halvard_Snowfang
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Halvard_Snowfang"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Bjorn_Icewolf = {
+        name = IMP_Bjorn_Icewolf
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Bjorn_Icewolf"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Dark Angels
+	IMP_Lion = {
+		name = IMP_Lion
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Lion"
+            }
+        }
+        field_marshal = {
+            traits = { brilliant_strategist fast_planner offensive_doctrine cavalry_leader war_hero ranger urban_assault_specialist trait_mountaineer defensive_doctrine }
+            skill = 5
+            attack_skill = 6
+            defense_skill = 6
+            planning_skill = 6
+            logistics_skill = 6
+        }
+	}
+    IMP_Elian_Vardius = {
+        name = IMP_Elian_Vardius
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Elian_Vardius"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Caleb_Rannos = {
+        name = IMP_Caleb_Rannos
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Caleb_Rannos"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Word Bearers
+	IMP_Lorgar = {
+		name = IMP_Lorgar
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Lorgar"
+            }
+        }
+        field_marshal = {
+            traits = { brilliant_strategist media_personality war_hero aggressive_assaulter offensive_doctrine cavalry_leader expert_delegator naval_invader urban_assault_specialist }
+            skill = 5
+            attack_skill = 7
+            defense_skill = 7
+            planning_skill = 7
+            logistics_skill = 7
+        }
+	}
+    IMP_Senek_Benedictus = {
+        name = IMP_Senek_Benedictus
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Senek_Benedictus"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Gortas_the_Verifier = {
+        name = IMP_Gortas_the_Verifier
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Gortas_the_Verifier"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Thousand Sons
+	IMP_Magnus = {
+		name = IMP_Magnus
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Magnus"
+            }
+        }
+        field_marshal = {
+            traits = { engineer_officer brilliant_strategist thorough_planner logistics_wizard expert_delegator winter_specialist offensive_doctrine war_hero urban_assault_specialist }
+            skill = 5
+            attack_skill = 8
+            defense_skill = 8
+            planning_skill = 8
+            logistics_skill = 8
+        }
+	}
+    IMP_Tarikson_Ezos = {
+        name = IMP_Tarikson_Ezos
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Tarikson_Ezos"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Nassimus_Arket = {
+        name = IMP_Nassimus_Arket
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Nassimus_Arket"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Death Guard
+	IMP_Mortarion = {
+		name = IMP_Mortarion
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Mortarion"
+            }
+        }
+        field_marshal = {
+            traits = { inflexible_strategist defensive_doctrine bearer_of_artillery unyielding_defender organizer swamp_fox hill_fighter winter_specialist }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 8
+            planning_skill = 7
+            logistics_skill = 9
+        }
+	}
+    IMP_Moras_Dracorn = {
+        name = IMP_Moras_Dracorn
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Moras_Dracorn"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Drax_Morlan = {
+        name = IMP_Drax_Morlan
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Drax_Morlan"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Iron Warriors
+	IMP_Perturabo = {
+		name = IMP_Perturabo
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Perturabo"
+            }
+        }
+        field_marshal = {
+            traits = { engineer_officer bearer_of_artillery defensive_doctrine inflexible_strategist organizer thorough_planner panzer_leader winter_specialist trait_engineer }
+            skill = 5
+            attack_skill = 8
+            defense_skill = 10
+            planning_skill = 5
+            logistics_skill = 5
+        }
+	}
+    IMP_Vorek_Tyl = {
+        name = IMP_Vorek_Tyl
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Vorek_Tyl"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Demitrius_Askalon = {
+        name = IMP_Demitrius_Askalon
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Demitrius_Askalon"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Imperial Fists
+	IMP_RogalDorn = {
+		name = IMP_RogalDorn
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_RogalDorn"
+            }
+        }
+        field_marshal = {
+            traits = { engineer_officer defensive_doctrine unyielding_defender bearer_of_artillery brilliant_strategist inflexible_strategist engineer_officer organizer trait_mountaineer winter_specialist }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 10
+            planning_skill = 10
+            logistics_skill = 10
+        }
+	}
+    IMP_Helius_Tork = {
+        name = IMP_Helius_Tork
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Helius_Tork"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Decius_Renar = {
+        name = IMP_Decius_Renar
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Decius_Renar"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Blood Angels
+	IMP_Sanguinius = {
+		name = IMP_Sanguinius
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Sanguinius"
+            }
+        }
+        field_marshal = {
+            traits = { fast_planner offensive_doctrine cavalry_leader infantry_leader brilliant_strategist war_hero aggressive_assaulter trait_mountaineer urban_assault_specialist }
+            skill = 5
+            attack_skill = 10
+            defense_skill = 10
+            planning_skill = 10
+            logistics_skill = 10
+        }
+	}
+    IMP_Alexius_Faust = {
+        name = IMP_Alexius_Faust
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Alexius_Faust"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Valerius_Sanguis = {
+        name = IMP_Valerius_Sanguis
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Valerius_Sanguis"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Salamanders
+	IMP_Vulkan = {
+		name = IMP_Vulkan
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Vulkan"
+            }
+        }
+        field_marshal = {
+            traits = { engineer_officer defensive_doctrine brilliant_strategist thorough_planner unyielding_defender trait_engineer war_hero winter_specialist trait_mountaineer hill_fighter }
+            skill = 5
+            attack_skill = 6
+            defense_skill = 10
+            planning_skill = 6
+            logistics_skill = 8
+        }
+	}
+    IMP_Tauron_Firass = {
+        name = IMP_Tauron_Firass
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Tauron_Firass"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    IMP_Daxon_Pyros = {
+        name = IMP_Daxon_Pyros
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Daxon_Pyros"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 4
+        }
+    }
+    ###Custodes
+	IMP_Constantin_Valdor = {
+		name = IMP_Constantin_Valdor
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Constantin_Valdor"
+                small = "GFX_portrait_IMP_Constantin_Valdor_small"
+            }
+        }
+        field_marshal = {
+            traits = { brilliant_strategist infantry_officer war_hero media_personality logistics_wizard unyielding_defender offensive_doctrine expert_delegator }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+        }
+        advisor={
+			slot = army_chief
+			idea_token = Constantin_Valdor
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+    IMP_Aurelian_Solus = {
+        name = IMP_Aurelian_Solus
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Aurelian_Solus"
+                small = "GFX_portrait_IMP_Aurelian_Solus_small"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 5
+            planning_skill = 2
+            logistics_skill = 2
+        }
+        advisor={
+			slot = high_command
+			idea_token = Aurelian_Solus
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+    }
+    IMP_Tarkos_Iridian = {
+        name = IMP_Tarkos_Iridian
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Tarkos_Iridian"
+                small = "GFX_portrait_IMP_Tarkos_Iridian_small"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 5
+            attack_skill = 5
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 1
+        }
+        advisor={
+			slot = high_command
+			idea_token = Tarkos_Iridian
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+    }
+
+    ### Imperial Guard
+    IMP_Maximilian_Thorn = {
+		name = IMP_Maximilian_Thorn
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Maximilian_Thorn"
+                small = "GFX_portrait_IMP_Maximilian_Thorn_small"
+            }
+        }
+        field_marshal = {
+            traits = { }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 4
+            visible = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+        }
+        advisor={
+			slot = army_chief
+			idea_token = IMP_Maximilian_Thorn
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+            available = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+			traits = {
+				army_chief_organizational_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+	}
+    IMP_William_Harrington = {
+        name = IMP_William_Harrington
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_William_Harrington"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 1
+            visible = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+        }
+    }
+    IMP_Katarina_Petrova = {
+        name = IMP_Katarina_Petrova
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Katarina_Petrova"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 5
+            planning_skill = 3
+            logistics_skill = 2
+            visible = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+        }
+    }
+    IMP_Hans_Steiner = {
+        name = IMP_Hans_Steiner
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Hans_Steiner"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 5
+            visible = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+        }
+    }
+    IMP_Francois_Dubois = {
+        name = IMP_Francois_Dubois
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Francois_Dubois"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 2
+            attack_skill = 4
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 2
+            visible = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+        }
+    }
+    IMP_Alessandro_Rossini = {
+        name = IMP_Alessandro_Rossini
+        portraits = {
+            army = {
+                large = "GFX_portrait_IMP_Alessandro_Rossini"
+            }
+        }
+        corps_commander = {
+            traits = {  }
+            skill = 1
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 2
+            visible = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+        }
+    }
+    IMP_Viktor_Markovich = {
+        name = IMP_Viktor_Markovich
+        portraits = {
+            army = {
+                small = "GFX_portrait_IMP_Viktor_Markovich_small"
+            }
+        }
+        advisor={
+            available = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+			slot = high_command
+			idea_token = IMP_Viktor_Markovich
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+    }
+    IMP_Heinrich_Waldstein = {
+        name = IMP_Heinrich_Waldstein
+        portraits = {
+            army = {
+                small = "GFX_portrait_IMP_Heinrich_Waldstein_small"
+            }
+        }
+        advisor={
+            available = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+			slot = theorist
+			idea_token = IMP_Heinrich_Waldstein
+			ledger = army
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+    }
+
+    ###Civil
+    IMP_Malcador = {
+        name = IMP_Malcador
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Malcador_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Malcador
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				silent_workhorse
+				prince_of_terror
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Zagreus_Kane = {
+        name = IMP_Zagreus_Kane
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Zagreus_Kane_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Zagreus_Kane
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				captain_of_industry
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Axi_Primaris = {
+        name = IMP_Axi_Primaris
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Axi_Primaris_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Axi_Primaris
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				war_industrialist
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Ferron_Omnicid = {
+        name = IMP_Ferron_Omnicid
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Ferron_Omnicid_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Ferron_Omnicid
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				fortification_engineer
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Kylen_Decius = {
+        name = IMP_Kylen_Decius
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Kylen_Decius_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Kylen_Decius
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				economist
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Ardent_Ramillus = {
+        name = IMP_Ardent_Ramillus
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Ardent_Ramillus_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Ardent_Ramillus
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				silent_workhorse
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Julian_Trax = {
+        name = IMP_Julian_Trax
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Julian_Trax_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Julian_Trax
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				smooth_talking_charmer
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Vera_Collins = {
+        name = IMP_Vera_Collins
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Vera_Collins_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Vera_Collins
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				connected_citizen
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Cassandra_Viridius = {
+        name = IMP_Cassandra_Viridius
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Cassandra_Viridius_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Cassandra_Viridius
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				head_of_intelligence
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+    IMP_Marcos_Severian = {
+        name = IMP_Marcos_Severian
+        portraits = {
+            civilian = {
+                small = "GFX_portrait_IMP_Marcos_Severian_small_civilain"
+            }
+        }
+        advisor = {
+			slot = political_advisor
+			idea_token = IMP_Marcos_Severian
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				imperium_priest
+			}
+            cost = 100
+			ai_will_do = {
+				base = 1000
+			}
+		}
+    }
+}

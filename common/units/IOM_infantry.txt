@@ -1,0 +1,278 @@
+sub_units = {
+    space_marines = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		priority = 702
+		ai_priority = 250
+		active = no
+		type = {
+			infantry
+		}
+		group = infantry
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_special_forces
+		}
+		combat_width = 4
+		# Offensive Abilities
+		soft_attack = 9
+		hard_attack = 2.5
+		# Size Definitions
+		max_strength = 72
+		max_organisation = 90
+		default_morale = 0.75
+		manpower = 100
+		# Misc Abilities
+		training_time = 200
+		suppression = 4
+		weight = 5
+		supply_consumption = 0.3
+		can_be_parachuted = yes
+		need = {
+			heavy_infantry_equipment = 100
+			power_armor_equipment = 100
+		}
+	}
+	super_heavy_space_marines = {
+		abbreviation = "SHS"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 72
+		max_organisation = 90
+		default_morale = 0.75
+		manpower = 10
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.02
+		
+		entrenchment = 2
+		
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.20
+			add = yes
+		}
+
+				
+		defense = 0.01
+		breakthrough = 0.01
+
+		# Support nerfs to combat abilities
+		soft_attack = -0.5
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			super_heavy_infantry_equipment = 10
+			power_armor_equipment = 10
+			support_equipment = 30
+		}
+
+		can_be_parachuted = yes
+		forest = {
+			defence = 0.3
+			attack = 0.2
+		}
+
+		hills = {
+			defence = 0.3
+			attack = 0.2
+		}
+
+		jungle = {
+			defence = 0.5
+			attack = 0.2
+		}
+
+		marsh = {
+			defence = 0.5
+			movement = 0.2
+			attack = 0.2
+		}
+
+		fort = {
+			attack = 0.5
+			defence = 0.5
+		}
+
+		river = {
+			defence = 0.5
+			movement = 0.25
+			attack = 0.2
+		}
+
+		amphibious = {
+			attack = 0.15
+		}
+	}
+	sniper_heavy_space_marines = {
+		abbreviation = "SHM"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 72
+		max_organisation = 90
+		default_morale = 0.75
+		manpower = 10
+		training_time = 120
+		recon = 2
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.02
+		
+		entrenchment = 2
+		
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.20
+			add = yes
+		}
+
+				
+		defense = 0.01
+		breakthrough = 0.01
+
+		# Support nerfs to combat abilities
+		soft_attack = -0.5
+
+		essential = {
+			support_equipment
+		}
+
+		need = {
+			sniper_heavy_infantry_equipment = 10
+			power_armor_equipment = 10
+			support_equipment = 30
+		}
+
+		can_be_parachuted = yes
+		forest = {
+			defence = 0.3
+			attack = 0.2
+		}
+
+		hills = {
+			defence = 0.3
+			attack = 0.2
+		}
+
+		jungle = {
+			defence = 0.5
+			attack = 0.2
+		}
+
+		marsh = {
+			defence = 0.5
+			movement = 0.2
+			attack = 0.2
+		}
+
+		fort = {
+			attack = 0.5
+			defence = 0.5
+		}
+
+		river = {
+			defence = 0.5
+			movement = 0.25
+			attack = 0.2
+		}
+
+		amphibious = {
+			attack = 0.15
+		}
+	}
+	legio_custodes = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		priority = 703
+		ai_priority = 250
+		active = no
+		type = {
+			infantry
+		}
+		group = infantry
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_special_forces
+		}
+		combat_width = 4
+		# Offensive Abilities
+		soft_attack = 8.5
+		hard_attack = 3.5
+		ap_attack = 3.5
+		# Defensive Abilities
+		defense = 3
+		breakthrough = 0.4
+		# Size Definitions
+		max_strength = 70
+		max_organisation = 110
+		default_morale = 0.8
+		manpower = 100
+		# Misc Abilities
+		training_time = 270
+		suppression = 6
+		weight = 6
+		supply_consumption = 0.6
+		can_be_parachuted = yes
+		need = {
+			heavy_infantry_equipment = 100
+			custodes_armor_equipment = 100
+		}
+	}
+	
+}

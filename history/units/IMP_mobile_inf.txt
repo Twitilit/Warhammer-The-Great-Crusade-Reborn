@@ -1,0 +1,67 @@
+division_template = {
+	name = "Mobile Squads"
+    
+    is_locked = no
+
+	regiments = {
+		imp_motorized = { x = 0 y = 0 }
+		imp_motorized = { x = 0 y = 1 }
+        imp_motorized = { x = 1 y = 0 }
+		imp_motorized = { x = 1 y = 1 }
+	}
+	support = {
+		heavy_imperial_infantry = { x = 0 y = 0}
+		imp_engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Mobile Regiment"
+		location = 1961
+		division_template = "Mobile Squads"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "2nd Mobile Regiment"
+		location = 1961
+		division_template = "Mobile Squads"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "3rd Mobile Regiment"
+		location = 1961
+		division_template = "Mobile Squads"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "4th Mobile Regiment"
+		location = 1961
+		division_template = "Mobile Squads"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "5th Mobile Regiment"
+		location = 1961
+		division_template = "Mobile Squads"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "6th Mobile Regiment"
+		location = 1961
+		division_template = "Mobile Squads"
+		start_experience_factor = 0.2
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+}

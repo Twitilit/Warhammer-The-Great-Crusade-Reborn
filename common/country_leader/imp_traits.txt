@@ -1,0 +1,10 @@
+leader_traits = {
+	imperium_priest = {
+		random = no
+		imperialism_drift = 0.1
+	
+	}
+
+
+
+}

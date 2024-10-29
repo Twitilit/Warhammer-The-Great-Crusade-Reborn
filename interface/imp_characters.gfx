@@ -1,0 +1,351 @@
+spriteTypes = {
+	### IMP
+	###LEADERS###
+	spriteType = {
+		name = "GFX_Portrait_Emperor_of_mankind"
+		texturefile = "gfx/leaders/IMP/Portrait_Emperor_of_mankind.dds"
+	}
+
+	###ADVISORS###
+	spriteType = {
+		name = "GFX_portrait_IMP_Malcador_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/idea_IMP_malcador.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Zagreus_Kane_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/idea_Zagreus_Kane.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Axi_Primaris_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/mechanicus_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Ferron_Omnicid_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/mechanicus_2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Kylen_Decius_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/mechanicus_3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Ardent_Ramillus_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/administratum_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Julian_Trax_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/administratum_2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Vera_Collins_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/administratum_3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Cassandra_Viridius_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/arbites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Marcos_Severian_small_civilain"
+		texturefile = "gfx/interface/ideas/IMP/priest_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Viktor_Markovich_small"
+		texturefile = "gfx/interface/ideas/IMP/general_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Heinrich_Waldstein_small"
+		texturefile = "gfx/interface/ideas/IMP/general_2.dds"
+	}
+	
+	###FIELDMARSHALS###
+	spriteType = {
+		name = "GFX_portrait_IMP_Guilliman"
+		texturefile = "gfx/leaders/IMP/Guilliman.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Horus"
+		texturefile = "gfx/leaders/IMP/Horus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Alpharius"
+		texturefile = "gfx/leaders/IMP/Alpharius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Angron"
+		texturefile = "gfx/leaders/IMP/Angron.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Corax"
+		texturefile = "gfx/leaders/IMP/Corax.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_FerrusManus"
+		texturefile = "gfx/leaders/IMP/FerrusManus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Fulgrim"
+		texturefile = "gfx/leaders/IMP/Fulgrim.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Jaghatai_Khan"
+		texturefile = "gfx/leaders/IMP/Jaghatai_Khan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_KonradCurze"
+		texturefile = "gfx/leaders/IMP/KonradCurze.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_LemanRuss"
+		texturefile = "gfx/leaders/IMP/LemanRuss.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Lion"
+		texturefile = "gfx/leaders/IMP/Lion.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Lorgar"
+		texturefile = "gfx/leaders/IMP/Lorgar.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Magnus"
+		texturefile = "gfx/leaders/IMP/Magnus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Mortarion"
+		texturefile = "gfx/leaders/IMP/Mortarion.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Perturabo"
+		texturefile = "gfx/leaders/IMP/Perturabo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_RogalDorn"
+		texturefile = "gfx/leaders/IMP/RogalDorn.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Sanguinius"
+		texturefile = "gfx/leaders/IMP/Sanguinius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Vulkan"
+		texturefile = "gfx/leaders/IMP/Vulkan.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Constantin_Valdor"
+		texturefile = "gfx/leaders/IMP/Portrait_Constantin_Valdor.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Constantin_Valdor_small"
+		texturefile = "gfx/interface/ideas/IMP/idea_IMP_constantin_valdor.dds"
+	}
+	
+
+	###GENERALS###
+	###Ultramarins
+	spriteType = {
+		name = "GFX_portrait_IMP_Victorion_Rex"
+		texturefile = "gfx/leaders/IMP/Victorion_Rex.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Gaius_Livius"
+		texturefile = "gfx/leaders/IMP/Gaius_Livius.dds"
+	}
+	###Sons of Horus
+	spriteType = {
+		name = "GFX_portrait_IMP_Marcos_Veturius"
+		texturefile = "gfx/leaders/IMP/Marcos_Veturius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Rennicor_Tull"
+		texturefile = "gfx/leaders/IMP/Rennicor_Tull.dds"
+	}
+	###Alpha Legion
+	spriteType = {
+		name = "GFX_portrait_IMP_Lyren_Altaris"
+		texturefile = "gfx/leaders/IMP/Lyren_Altaris.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Terax_Anonis"
+		texturefile = "gfx/leaders/IMP/Terax_Anonis.dds"
+	}
+	### World Eaters
+	spriteType = {
+		name = "GFX_portrait_IMP_Targar_the_Predator"
+		texturefile = "gfx/leaders/IMP/Targar_the_Predator.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Malkor_Bloodblade"
+		texturefile = "gfx/leaders/IMP/Malkor_Bloodblade.dds"
+	}
+	### Raven Guard
+	spriteType = {
+		name = "GFX_portrait_IMP_Ernek_the_Raven_Bearer"
+		texturefile = "gfx/leaders/IMP/Ernek_the_Raven_Bearer.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Sindan_Shadowstep"
+		texturefile = "gfx/leaders/IMP/Sindan_Shadowstep.dds"
+	}
+	### Iron Hands
+	spriteType = {
+		name = "GFX_portrait_IMP_Marcus_Ferrit"
+		texturefile = "gfx/leaders/IMP/Marcus_Ferrit.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Xander_Brant"
+		texturefile = "gfx/leaders/IMP/Xander_Brant.dds"
+	}
+	### Emperor's Children
+	spriteType = {
+		name = "GFX_portrait_IMP_Celestine_Flavius"
+		texturefile = "gfx/leaders/IMP/Celestine_Flavius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Galerius_Quirin"
+		texturefile = "gfx/leaders/IMP/Galerius_Quirin.dds"
+	}
+	### White Scars
+	spriteType = {
+		name = "GFX_portrait_IMP_Karag_Darkstorm"
+		texturefile = "gfx/leaders/IMP/Karag_Darkstorm.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Orkin_Hakkor"
+		texturefile = "gfx/leaders/IMP/Orkin_Hakkor.dds"
+	}
+	###Night Lords
+	spriteType = {
+		name = "GFX_portrait_IMP_Malascar_the_Shadow"
+		texturefile = "gfx/leaders/IMP/Malascar_the_Shadow.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Zakharia_Bloodblade"
+		texturefile = "gfx/leaders/IMP/Zakharia_Bloodblade.dds"
+	}
+	###Space Wolves
+	spriteType = {
+		name = "GFX_portrait_IMP_Halvard_Snowfang"
+		texturefile = "gfx/leaders/IMP/Halvard_Snowfang.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Bjorn_Icewolf"
+		texturefile = "gfx/leaders/IMP/Bjorn_Icewolf.dds"
+	}
+	###Dark Angels
+	spriteType = {
+		name = "GFX_portrait_IMP_Elian_Vardius"
+		texturefile = "gfx/leaders/IMP/Elian_Vardius.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Caleb_Rannos"
+		texturefile = "gfx/leaders/IMP/Caleb_Rannos.dds"
+	}
+	###Word Bearers
+	spriteType = {
+		name = "GFX_portrait_IMP_Senek_Benedictus"
+		texturefile = "gfx/leaders/IMP/Senek_Benedictus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Gortas_the_Verifier"
+		texturefile = "gfx/leaders/IMP/Gortas_the_Verifier.dds"
+	}
+	###Thousand Sons
+	spriteType = {
+		name = "GFX_portrait_IMP_Tarikson_Ezos"
+		texturefile = "gfx/leaders/IMP/Tarikson_Ezos.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Nassimus_Arket"
+		texturefile = "gfx/leaders/IMP/Nassimus_Arket.dds"
+	}
+	###Death Guard
+	spriteType = {
+		name = "GFX_portrait_IMP_Moras_Dracorn"
+		texturefile = "gfx/leaders/IMP/Moras_Dracorn.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Drax_Morlan"
+		texturefile = "gfx/leaders/IMP/Drax_Morlan.dds"
+	}
+	###Iron Warriors
+	spriteType = {
+		name = "GFX_portrait_IMP_Vorek_Tyl"
+		texturefile = "gfx/leaders/IMP/Vorek_Tyl.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Demitrius_Askalon"
+		texturefile = "gfx/leaders/IMP/Demitrius_Askalon.dds"
+	}
+	###Imperial Fists
+	spriteType = {
+		name = "GFX_portrait_IMP_Helius_Tork"
+		texturefile = "gfx/leaders/IMP/Helius_Tork.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Decius_Renar"
+		texturefile = "gfx/leaders/IMP/Decius_Renar.dds"
+	}
+	###Blood Angels
+	spriteType = {
+		name = "GFX_portrait_IMP_Alexius_Faust"
+		texturefile = "gfx/leaders/IMP/Alexius_Faust.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Valerius_Sanguis"
+		texturefile = "gfx/leaders/IMP/Valerius_Sanguis.dds"
+	}
+	###Salamanders
+	spriteType = {
+		name = "GFX_portrait_IMP_Tauron_Firass"
+		texturefile = "gfx/leaders/IMP/Tauron_Firass.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Daxon_Pyros"
+		texturefile = "gfx/leaders/IMP/Daxon_Pyros.dds"
+	}
+	###Custodes
+	spriteType = {
+		name = "GFX_portrait_IMP_Aurelian_Solus"
+		texturefile = "gfx/leaders/IMP/Aurelian_Solus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Aurelian_Solus_small"
+		texturefile = "gfx/interface/ideas/IMP/idea_Aurelian_Solus.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Tarkos_Iridian"
+		texturefile = "gfx/leaders/IMP/Tarkos_Iridian.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Tarkos_Iridian_small"
+		texturefile = "gfx/interface/ideas/IMP/idea_Tarkos_Iridian.dds"
+	}
+	### Imperial Guard
+	spriteType = {
+		name = "GFX_portrait_IMP_Maximilian_Thorn"
+		texturefile = "gfx/leaders/IMP/Maximilian_Thorn.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Maximilian_Thorn_small"
+		texturefile = "gfx/interface/ideas/IMP/Maximilian_Thorn_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_William_Harrington"
+		texturefile = "gfx/leaders/IMP/William_Harrington.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Katarina_Petrova"
+		texturefile = "gfx/leaders/IMP/Katarina_Petrova.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Hans_Steiner"
+		texturefile = "gfx/leaders/IMP/Hans_Steiner.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Francois_Dubois"
+		texturefile = "gfx/leaders/IMP/Francois_Dubois.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Alessandro_Rossini"
+		texturefile = "gfx/leaders/IMP/Alessandro_Rossini.dds"
+	}
+}

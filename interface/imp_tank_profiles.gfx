@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_IMP_light_AAB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_light.dds
+	}
+	spriteType = {
+		name = GFX_IMP_light_AAC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_lightB.dds
+	}
+	spriteType = {
+		name = GFX_IMP_light_ABA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_light_art.dds
+	}
+	spriteType = {
+		name = GFX_IMP_light_ABB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_light_flamer.dds
+	}
+	spriteType = {
+		name = GFX_IMP_light_ABC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_light_AA.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_AAB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_medium.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_AAC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_mediumB.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_ABA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_mediumC.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_ABB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_medium_art.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_ABC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_medium_artB.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_ACA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_medium_artC.dds
+	}
+	spriteType = {
+		name = GFX_IMP_medium_ACB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_medium_AA.dds
+	}
+	spriteType = {
+		name = GFX_IMP_heavy_AAB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_heavy.dds
+	}
+	spriteType = {
+		name = GFX_IMP_heavy_AAC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_heavyB.dds
+	}
+	spriteType = {
+		name = GFX_IMP_heavy_ABA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_heavyC.dds
+	}
+	spriteType = {
+		name = GFX_IMP_heavy_ABB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_heavy_art.dds
+	}
+	spriteType = {
+		name = GFX_IMP_heavy_ABC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_heavy_artB.dds
+	}
+	spriteType = {
+		name = GFX_IMP_heavy_ACA
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_heavy_artC.dds
+	}
+	spriteType = {
+		name = GFX_IMP_superheavy_AAB
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_superheavy.dds
+	}
+	spriteType = {
+		name = GFX_IMP_superheavy_AAC
+		texturefile = gfx/interface/equipmentdesigner/tanks/designer/IMP/IMP_superheavyB.dds
+	}
+}

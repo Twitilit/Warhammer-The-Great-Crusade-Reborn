@@ -1,0 +1,594 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_space_marines_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_space_marine_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_space_marines_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_space_marine_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_space_marines_icon_small"
+		texturefile = "gfx/texticons/unit_space_marine_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_space_marines_icon_small"
+		texturefile = "gfx/texticons/nato_unit_space_marine_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_unit_legio_custodes_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_custodes_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_legio_custodes_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_custodes_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_legio_custodes_icon_small"
+		texturefile = "gfx/texticons/unit_custodes_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_legio_custodes_icon_small"
+		texturefile = "gfx/texticons/nato_unit_custodes_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_unit_imperial_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imperium_guard_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imperial_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imperium_guard_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imperial_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_imperium_guard_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_heavy_imperial_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_imperium_guard_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_imperial_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_imperium_guard_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_imperial_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_imperium_guard_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_sniper_imperial_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_sniper_imperium_guard_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_sniper_imperial_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_sniper_imperium_guard_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_sniper_imperial_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_sniper_imperium_guard_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_super_heavy_space_marines_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_space_marines_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_space_marines_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_space_marines_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_space_marines_icon_small"
+		texturefile = "gfx/texticons/unit_super_heavy_space_marines_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_sniper_heavy_space_marines_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_sniper_heavy_space_marines_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_sniper_heavy_space_marines_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_sniper_heavy_space_marines_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_sniper_heavy_space_marines_icon_small"
+		texturefile = "gfx/texticons/unit_sniper_heavy_space_marines_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_armored_car_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_armored_car_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_armored_car_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_armored_car_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_armored_car_icon_small"
+		texturefile = "gfx/texticons/unit_imp_armored_car_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_motorized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_motorized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_motorized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_motorized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_motorized_icon_small"
+		texturefile = "gfx/texticons/unit_imp_motorized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_imp_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_imp_engineer_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_engineer_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_engineer_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_engineer_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_imp_engineer_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	###Artillery
+
+	spriteType = {
+		name = "GFX_unit_imp_artillery_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_imp_art_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_artillery_icon_small"
+		texturefile = "gfx/texticons/imp_support_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_artillery_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_art_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_artillery_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_art_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/imp_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_mot_artillery_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_mot_art_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mot_artillery_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_mot_art_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mot_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_imp_mot_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	###ANTI-TANK
+	spriteType = {
+		name = "GFX_unit_imp_anti_tank_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_imp_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_anti_tank_icon_small"
+		texturefile = "gfx/texticons/imp_support_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_anti_tank_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_anti_tank_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_anti_tank_brigade_icon_small"
+		texturefile = "gfx/texticons/imp_unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_mot_anti_tank_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_mot_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mot_anti_tank_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_mot_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mot_anti_tank_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_imp_mot_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	###ANTI-AIR
+	spriteType = {
+		name = "GFX_unit_imp_anti_air_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_imp_anti_air_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_anti_air_icon_small"
+		texturefile = "gfx/texticons/imp_support_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_anti_imp_air_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_anti_air_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_anti_air_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/imp_unit_anti_air_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_imp_mot_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_imp_mot_anti_air_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mot_anti_air_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_imp_mot_anti_air_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_imp_mot_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_imp_mot_anti_air_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	###TANKS
+	spriteType = {
+		name = "GFX_unit_iom_light_armor_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_light_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_light_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_armor_icon_small"
+		texturefile = "gfx/texticons/unit_iom_light_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_flame_tank_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_light_flamethrower_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_flame_tank_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_light_flamethrower_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_flame_tank_icon_small"
+		texturefile = "gfx/texticons/unit_iom_light_flame_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_light_sp_artillery_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_light_tank_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_sp_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_light_armor_icon_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_sp_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_light_tank_antiair_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_sp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_light_armor_icon_art_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_tank_destroyer_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_light_tank_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_light_tank_destroyer_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_light_armor_icon_art_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_medium_armor_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_medium_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_medium_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_armor_icon_small"
+		texturefile = "gfx/texticons/unit_iom_medium_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_flame_tank_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_medium_flamethrower_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_flame_tank_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_medium_flamethrower_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_flame_tank_icon_small"
+		texturefile = "gfx/texticons/unit_iom_medium_flame_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_medium_sp_artillery_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_medium_tank_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_sp_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_medium_armor_icon_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_sp_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_medium_tank_antiair_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_sp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_medium_armor_icon_art_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_tank_destroyer_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_medium_tank_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_medium_tank_destroyer_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_medium_armor_icon_art_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_heavy_armor_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_heavy_armor_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_heavy_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_armor_icon_small"
+		texturefile = "gfx/texticons/unit_iom_heavy_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_flame_tank_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_heavy_flamethrower_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_flame_tank_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_heavy_flamethrower_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_flame_tank_icon_small"
+		texturefile = "gfx/texticons/unit_iom_heavy_flame_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_heavy_sp_artillery_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_heavy_armor_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_sp_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_heavy_armor_icon_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_sp_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_heavy_armor_antiair_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_sp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_heavy_armor_icon_art_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_tank_destroyer_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_heavy_armor_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_heavy_tank_destroyer_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_heavy_armor_icon_art_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_armor_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_super_heavy_armor_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_armor_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_iom_super_heavy_armor_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_armor_icon_small"
+		texturefile = "gfx/texticons/unit_iom_super_heavy_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_sp_artillery_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_super_heavy_armor_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_sp_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_super_heavy_armor_icon_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_sp_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_super_heavy_armor_antiair_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_sp_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_super_heavy_armor_icon_art_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_tank_destroyer_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_iom_super_heavy_armor_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_iom_super_heavy_tank_destroyer_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_iom_heavy_armor_icon_art_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+}

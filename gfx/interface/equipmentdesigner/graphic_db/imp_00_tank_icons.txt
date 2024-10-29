@@ -1,0 +1,110 @@
+IMP = {
+	iom_super_heavy_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				GFX_IMP_superheavy_AAB
+			 }
+		}
+	}
+	iom_super_heavy_tank_chassis_2 = {
+		pool = {
+			weight = 0.1
+			icons = { 
+				GFX_IMP_superheavy_AAC	
+			 }
+		}
+	}
+	iom_light_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				GFX_IMP_light_AAB
+				GFX_IMP_light_ABC
+				GFX_IMP_light_ABA
+				GFX_IMP_light_ABB
+			 }
+		}
+	}
+	iom_light_tank_chassis_2 = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_IMP_light_AAC	
+				GFX_IMP_light_AAB
+				GFX_IMP_light_ABC
+				GFX_IMP_light_ABA
+				GFX_IMP_light_ABB				 
+			}
+		}
+	}
+	iom_light_tank_chassis_3 = {
+		pool = {
+			weight = 0.1
+			icons = { 
+				GFX_IMP_light_AAB
+				GFX_IMP_light_ABC
+				GFX_IMP_light_ABA
+				GFX_IMP_light_ABB
+				GFX_IMP_light_AAC
+			 }
+		}
+	}
+	iom_medium_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				GFX_IMP_medium_AAB
+				GFX_IMP_medium_ABB
+				GFX_IMP_medium_ACB	
+			 }
+		}
+	}
+	iom_medium_tank_chassis_2 = {
+		pool = {
+			weight = 0.1
+			icons = { 
+				GFX_IMP_medium_AAC
+				GFX_IMP_medium_ABC
+				
+			 }
+		}
+	}
+	iom_medium_tank_chassis_3 = {
+		pool = {
+			weight = 0.1
+			icons = { 
+				GFX_IMP_medium_ABA
+				GFX_IMP_medium_ACA			
+			 }
+		}
+	}
+	iom_heavy_tank_chassis_1 = {
+		pool = {
+			weight = 2
+			icons = { 
+				GFX_IMP_heavy_AAB
+				GFX_IMP_heavy_ABB
+			 }
+		}
+	}
+	iom_heavy_tank_chassis_2 = {
+		pool = {
+			weight = 0.1
+			icons = { 
+				GFX_IMP_heavy_ABC
+				GFX_IMP_heavy_AAC
+			 }
+		}
+	}
+	iom_heavy_tank_chassis_3 = {
+		pool = {
+			weight = 0.1
+			icons = { 
+				GFX_IMP_heavy_ACA
+				GFX_IMP_heavy_ABA
+			 }
+		}
+	}
+	
+}

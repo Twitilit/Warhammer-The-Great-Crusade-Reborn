@@ -1,0 +1,61 @@
+capital = 970
+
+set_research_slots = 1
+
+# Starting tech
+set_technology = {
+	iom_power_armor_custodes = 1
+	iom_heavy_infantry_equipment = 1
+	imp_artillery = 1
+}
+
+set_war_support = 0.05
+set_stability = 0.05
+set_oob = "IMP_1936"
+
+set_politics = {
+	ruling_party = imperialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 60
+	fascism = 0
+	communism = 15
+	neutrality = 20
+	imperialism = 5
+}
+
+create_country_leader = {
+	name = IMP_emperor
+	desc = IMP_emperor_desc
+	picture = "Portrait_Emperor_of_mankind.dds"
+	expire = "2000.1.1"
+	ideology = imperialism
+	traits = {
+		#
+	}
+}
+recruit_character = IMP_Tarkos_Iridian
+recruit_character = IMP_Constantin_Valdor
+recruit_character = IMP_Aurelian_Solus
+recruit_character = IMP_Malcador
+recruit_character = IMP_Zagreus_Kane
+recruit_character = IMP_Axi_Primaris
+recruit_character = IMP_Ferron_Omnicid
+recruit_character = IMP_Kylen_Decius
+recruit_character = IMP_Ardent_Ramillus
+recruit_character = IMP_Julian_Trax
+recruit_character = IMP_Vera_Collins
+recruit_character = IMP_Cassandra_Viridius
+recruit_character = IMP_Marcos_Severian
+recruit_character = IMP_Viktor_Markovich
+recruit_character = IMP_Heinrich_Waldstein
+recruit_character = IMP_Maximilian_Thorn
+recruit_character = IMP_William_Harrington
+recruit_character = IMP_Katarina_Petrova
+recruit_character = IMP_Hans_Steiner
+recruit_character = IMP_Francois_Dubois
+recruit_character = IMP_Alessandro_Rossini

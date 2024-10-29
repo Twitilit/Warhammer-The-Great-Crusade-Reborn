@@ -1,0 +1,1488 @@
+focus_tree = {
+	id = imperium_focus
+
+	continuous_focus_position = {
+		x = 0
+		y = 2500
+	}
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = IMP
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = IMP_warp_anomaly
+		icon = GFX_IMP_warp_anomaly
+		x = 5
+		y = 0
+		cost = 1
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.1 
+				days = 1
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_appearance_in_tibet
+		icon = GFX_IMP_appearance_in_tibet
+		x = 5
+		y = 1
+		cost = 1
+		prerequisite = {
+			focus = IMP_warp_anomaly
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.2
+				days = 1
+			}
+			country_event = { 
+				id = imperium.3
+				days = 5
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_terrain_exploration
+		icon = GFX_IMP_terrain_exploration
+		x = 5
+		y = 2
+		cost = 1
+		prerequisite = {
+			focus = IMP_appearance_in_tibet
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.4
+				days = 1
+			}
+			country_event = { 
+				id = imperium.5
+				days = 7
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_council_dialogue
+		icon = GFX_IMP_council_dialogue
+		x = 5
+		y = 3
+		cost = 1
+		prerequisite = {
+			focus = IMP_terrain_exploration
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.6
+				days = 1
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_deployment_of_adeptus_custodes_camps
+		icon = GFX_IMP_deployment_of_adeptus_custodes_camps
+		x = 5
+		y = 4
+		cost = 1
+		prerequisite = {
+			focus = IMP_council_dialogue
+		}
+		available = {
+			has_government = imperialism
+			NOT = {
+				country_exists = TIB
+			}
+			controls_state = 758
+			controls_state = 322
+			controls_state = 757
+		}
+		completion_reward = {
+			970 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 1961
+					instant_build = yes
+				}
+			}
+			758 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_compliance = 30
+			}
+			322 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_compliance = 30
+			}
+			757 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_compliance = 30
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_beginning_of_tibetan_integration
+		icon = GFX_IMP_beginning_of_tibetan_integration
+		x = 5
+		y = 5
+		cost = 1
+		prerequisite = {
+			focus = IMP_deployment_of_adeptus_custodes_camps
+		}
+		available = {
+			has_government = imperialism
+			NOT = {
+				country_exists = TIB
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = tibetan_integration.1
+			add_political_power = 200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_full_tibetan_integration
+		icon = GFX_IMP_beginning_of_tibetan_integration
+		x = 0
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = IMP_beginning_of_tibetan_integration
+		}
+		available = {
+			has_government = imperialism
+			core_compliance = {
+    			occupied_country_tag = TIB
+    			value > 80
+			}
+		}
+		completion_reward = {
+			add_state_core = 758
+			add_state_core = 757
+			add_state_core = 322
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_full_integration_of_new_territories
+		icon = GFX_IMP_beginning_of_tibetan_integration
+		x = 0
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = IMP_full_tibetan_integration
+		}
+		available = {
+			has_government = imperialism
+			core_compliance = {
+    			occupied_country_tag = NEP
+    			value > 80
+			}
+			core_compliance = {
+    			occupied_country_tag = BHU
+    			value > 80
+			}
+			core_compliance = {
+    			occupied_country_tag = SIK
+    			value > 80
+			}
+			core_compliance = {
+    			occupied_country_tag = XSM
+    			value > 80
+			}
+		}
+		completion_reward = {
+			add_state_core = 323
+			add_state_core = 324
+			add_state_core = 287
+			add_state_core = 619
+			add_state_core = 617
+			add_state_core = 759
+			add_state_core = 618
+			add_state_core = 760
+			add_state_core = 604
+			add_state_core = 755
+			add_state_core = 756
+			add_state_core = 616
+			add_state_core = 754
+			add_state_core = 753
+			add_state_core = 283
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_creation_of_officer_schools
+		icon = GFX_IMP_creation_of_officer_schools
+		x = 3
+		y = 6
+		cost = 3
+		prerequisite = {
+			focus = IMP_beginning_of_tibetan_integration
+		}
+		available = {
+			has_government = imperialism
+			core_compliance = {
+    			occupied_country_tag = TIB
+    			value > 25
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = creation_of_officer_schools.1
+			set_technology = {
+    			iom_infantry_weapons = 1
+			}
+			set_technology = {
+    			iom_infantry_armour_equipment = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_recruitment_of_the_first_divisions
+		icon = GFX_IMP_recruitment_of_the_first_divisions
+		x = 2
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = IMP_creation_of_officer_schools
+		}
+		available = {
+			has_government = imperialism
+			has_army_experience > 30
+		}
+		completion_reward = {
+			custom_effect_tooltip = imperial_guard.1
+			hidden_effect = {
+				load_oob = "IMP_guard"
+			}
+			add_war_support = 0.2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_army_reforms
+		icon = GFX_IMP_army_reforms
+		x = 4
+		y = 7
+		cost = 3
+		prerequisite = {
+			focus = IMP_creation_of_officer_schools
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			970 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			757 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			758 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			322 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_army_technologies
+		icon = GFX_IMP_army_technologies
+		x = 3
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = IMP_army_reforms
+		}
+		prerequisite = {
+			focus = IMP_recruitment_of_the_first_divisions
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = las_infantry_weapons
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = infantry_armor
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_army_inovation
+		icon = GFX_IMP_army_technologies
+		x = 1
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = IMP_army_technologies
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_army_inovation2
+		icon = GFX_IMP_army_technologies
+		x = 1
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = IMP_army_technologies
+		}
+		prerequisite = {
+			focus = IMP_recruit_more
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 1
+    			category = cat_light_armor
+			}
+			set_technology = {
+				iom_heavyb_infantry_equipment = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_begin_project_tanks
+		icon = GFX_IMP_tanks_project
+		x = 0
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = IMP_army_inovation2
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+    			imp_basic_light_tank_chassis = 1
+			}
+			create_equipment_variant = {
+				name = "Salamander"
+				type = iom_light_tank_chassis_1
+				icon = "GFX_IMP_light_AAB"
+				modules = {
+					turret_type_slot = tank_light_one_man_tank_turret
+					main_armament_slot = imp_tank_auto_cannon
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = ablative_armor
+					engine_type_slot = martian_template_engine
+					special_type_slot_1 = imp_tank_bolt_gun
+
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_infrastructure_for_tanks
+		icon = GFX_IMP_infrastructure_tanks
+		x = 0
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = IMP_begin_project_tanks
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			970 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+			758 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+			322 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_mobile_infantry
+		icon = GFX_IMP_mobile_inf
+		x = 2
+		y = 13
+		cost = 5
+		prerequisite = {
+			focus = IMP_begin_project_tanks
+		}
+		prerequisite = {
+			focus = IMP_recruit_new_divisions
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = imp_mobile_infantry.tt
+			set_technology = {
+				iom_motorized_equipment = 1
+			}
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 1
+    			category = cat_armored_cars
+			}
+			hidden_effect = {
+				load_oob = IMP_mobile_inf
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_educational_reforms
+		icon = GFX_IMP_educational_reforms
+		x = 7
+		y = 6
+		cost = 3
+		prerequisite = {
+			focus = IMP_beginning_of_tibetan_integration
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_research_slot = 2
+			add_ideas = IMP_scientific_education
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_financial_reforms
+		icon = GFX_IMP_financial_reforms
+		x = 6
+		y = 7
+		cost = 3
+		prerequisite = {
+			focus = IMP_educational_reforms
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = IMP_Financial_System
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_imperium_economy
+		icon = GFX_IMP_financial_reforms
+		x = 7
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = IMP_financial_reforms
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_ideas = imperium_economy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_prepare_industry
+		icon = GFX_IMP_financial_reforms
+		x = 8
+		y = 7
+		cost = 5
+		prerequisite = {
+			focus = IMP_educational_reforms
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 4
+    			category = industry
+			}
+			970 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			757 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			758 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			322 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_clear_the_area
+		icon = GFX_IMP_infrastructure_generic
+		x = 9
+		y = 8
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_industry
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			970 = {
+				add_extra_state_shared_building_slots = 6
+			}
+			757 = {
+				add_extra_state_shared_building_slots = 6
+			}
+			758 = {
+				add_extra_state_shared_building_slots = 6
+			}
+			322 = {
+				add_extra_state_shared_building_slots = 6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_construct_more_industry
+		icon = GFX_IMP_production
+		x = 11
+		y = 8
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_industry
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_stability = -0.1
+			970 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			757 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			758 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			322 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_build_infrastructre
+		icon = GFX_IMP_infrastructure_generic
+		x = 11
+		y = 10
+		cost = 3
+		prerequisite = {
+			focus = IMP_construct_more_industry
+		}
+		prerequisite = {
+			focus = IMP_resources_oil
+		}
+		prerequisite = {
+			focus = IMP_resources_chromium
+		}
+		prerequisite = {
+			focus = IMP_resources_steel
+		}
+		prerequisite = {
+			focus = IMP_resources_tungsten
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			970 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			757 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			758 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			322 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_dig_more
+		icon = GFX_IMP_resources
+		x = 10
+		y = 11
+		cost = 3
+		prerequisite = {
+			focus = IMP_build_infrastructre
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = dig_more
+			add_ideas = IMP_dig_more_idea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_prepare_for_next_crusade
+		icon = GFX_IMP_prep_next
+		x = 8
+		y = 11
+		cost = 3
+		prerequisite = {
+			focus = IMP_build_infrastructre
+		}
+		prerequisite = {
+			focus = IMP_results_of_small_crusade
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_ideas = new_infrastructure
+			custom_effect_tooltip = rails_mission_1.tt
+			hidden_effect = {
+				activate_mission = IMP_mission_rails_1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_more_equipment
+		icon = GFX_IMP_beginning_of_tibetan_integration
+		x = 8
+		y = 12
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_for_next_crusade
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_ideas = more_equipment
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_expand_further
+		icon = GFX_IMP_start_small_crusade
+		x = 6
+		y = 12
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_for_next_crusade
+		}
+		prerequisite = {
+			focus = IMP_beginning_integration_of_new_territories
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = border_wars1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_deal_with_china
+		icon = GFX_IMP_financial_reforms
+		x = 5
+		y = 13
+		cost = 5
+		mutually_exclusive = {
+			focus = IMP_deal_with_japan
+		}
+		prerequisite = {
+			focus = IMP_expand_further
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.11
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_mobilize
+		icon = GFX_IMP_recruitment_of_the_first_divisions
+		x = 6
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = IMP_deal_with_china
+			focus = IMP_deal_with_japan
+		}
+		available = {
+			OR = {
+				has_war_with = JAP
+				has_war_with = CHI
+			}
+			
+		}
+		completion_reward = {
+			add_manpower = 500000
+			add_stability = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_backstab_jap
+		icon = GFX_IMP_start_small_crusade
+		x = 8
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = IMP_deal_with_japan
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = JAP
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_backstab_chi
+		icon = GFX_IMP_start_small_crusade
+		x = 4
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = IMP_deal_with_china
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = CHI
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_stabilize_imperium
+		icon = GFX_IMP_creation_of_adeptus_arbites
+		x = 6
+		y = 15
+		cost = 20
+		prerequisite = {
+			focus = IMP_backstab_chi
+			focus = IMP_backstab_jap
+		}
+		available = {
+			has_war = no
+			has_full_control_of_state = 613
+			has_full_control_of_state = 282
+		}
+		completion_reward = {
+			custom_effect_tooltip = stabilize_imp.tt
+			every_controlled_state = {
+				add_core_of = THIS
+			}
+			
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_deal_with_japan
+		icon = GFX_IMP_financial_reforms
+		x = 7
+		y = 13
+		cost = 5
+		mutually_exclusive = {
+			focus = IMP_deal_with_china
+		}
+		prerequisite = {
+			focus = IMP_expand_further
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.12
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_resources_steel
+		icon = GFX_IMP_resources_steel
+		x = 10
+		y = 9
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_industry
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = excavation_tech
+			}
+			add_resource = {
+    			type = steel
+    			amount = 32
+    			state = 970
+			}
+			add_resource = {
+    			type = steel
+    			amount = 16
+    			state = 757
+			}
+			add_resource = {
+    			type = steel
+    			amount = 16
+    			state = 758
+			}
+			add_resource = {
+    			type = steel
+    			amount = 16
+    			state = 322
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_resources_chromium
+		icon = GFX_IMP_resources
+		x = 12
+		y = 9
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_industry
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 1
+    			category = excavation_tech
+			}
+			add_resource = {
+    			type = chromium
+    			amount = 16
+    			state = 970
+			}
+			add_resource = {
+    			type = chromium
+    			amount = 16
+    			state = 757
+			}
+			add_resource = {
+    			type = chromium
+    			amount = 16
+    			state = 758
+			}
+			add_resource = {
+    			type = chromium
+    			amount = 16
+    			state = 322
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_resources_tungsten
+		icon = GFX_IMP_resources_tungsten
+		x = 14
+		y = 9
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_industry
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_resource = {
+    			type = tungsten
+    			amount = 16
+    			state = 970
+			}
+			add_resource = {
+    			type = tungsten
+    			amount = 16
+    			state = 757
+			}
+			add_resource = {
+    			type = tungsten
+    			amount = 16
+    			state = 758
+			}
+			add_resource = {
+    			type = tungsten
+    			amount = 16
+    			state = 322
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_resources_oil
+		icon = GFX_IMP_resources_oil
+		x = 8
+		y = 9
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_industry
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    			bonus = 0.5
+    			uses = 2
+    			category = synth_resources
+			}
+			add_resource = {
+    			type = oil
+    			amount = 8
+    			state = 970
+			}
+			add_resource = {
+    			type = oil
+    			amount = 8
+    			state = 757
+			}
+			add_resource = {
+    			type = oil
+    			amount = 8
+    			state = 758
+			}
+			add_resource = {
+    			type = oil
+    			amount = 8
+    			state = 322
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_prepare_for_small_crusade
+		icon = GFX_IMP_start_small_crusade
+		x = 5
+		y = 8
+		cost = 3
+		prerequisite = {
+			focus = IMP_financial_reforms
+		}
+		prerequisite = {
+			focus = IMP_army_reforms
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+    			imp_basic_train = 1
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 35
+			}
+			build_railway = {
+				path = { 1961 8029 1991 8121 4994 5033 }
+			}
+			build_railway = {
+				path = { 8029 12784 2010 }
+			}
+			322 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 2010
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_improve_guard
+		icon = GFX_IMP_improve_guard
+		x = 4
+		y = 9
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_for_small_crusade
+		}
+		prerequisite = {
+			focus = IMP_army_technologies
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+    			imp_tech_support = 1
+			}
+			set_technology = {
+    			imp_tech_engineers = 1
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = IMP
+			}
+			add_equipment_production = {
+    			equipment = {
+       				type = support_equipment_1
+    			}
+    			requested_factories = 1
+    			progress = 0.2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_recruit_more
+		icon = GFX_IMP_recruitment_of_the_first_divisions
+		x = 3
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = IMP_improve_guard
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_manpower = 100000
+			add_ideas = imperium_consciption
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_recruit_new_divisions
+		icon = GFX_IMP_recruitment_of_the_first_divisions
+		x = 2
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = IMP_recruit_more
+		}
+		prerequisite = {
+			focus = IMP_army_inovation2
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = recruit_more_divisions
+			hidden_effect = {
+				load_oob = IMP_more_guard
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_start_small_crusade
+		icon = GFX_IMP_start_small_crusade
+		x = 6
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = IMP_prepare_for_small_crusade
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			declare_war_on = {
+            	target = NEP
+            	type = annex_everything
+        	}
+			declare_war_on = {
+            	target = BHU
+            	type = annex_everything
+        	}
+			declare_war_on = {
+            	target = SIK
+            	type = annex_everything
+        	}
+			declare_war_on = {
+            	target = XSM
+            	type = annex_everything
+        	}
+			hidden_effect = {
+				XSM = {
+					set_rule = {
+						desc = imp_not_allowed
+						can_join_factions = no
+					}
+				}
+				SIK = {
+					set_rule = {
+						desc = imp_not_allowed
+						can_join_factions = no
+					}
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_results_of_small_crusade
+		icon = GFX_IMP_results_of_small_crusade
+		x = 6
+		y = 10
+		cost = 3
+		prerequisite = {
+			focus = IMP_start_small_crusade
+		}
+		available = {
+			has_government = imperialism
+			NOT = {
+				country_exists = NEP
+			}
+			NOT = {
+				country_exists = BHU
+			}
+			NOT = {
+				country_exists = SIK
+			}
+			NOT = {
+				country_exists = XSM
+			}
+			controls_state = 323
+			controls_state = 324
+			controls_state = 287
+			controls_state = 619
+			controls_state = 617
+			controls_state = 759
+			controls_state = 618
+			controls_state = 760
+			controls_state = 604
+			controls_state = 755
+			controls_state = 756
+			controls_state = 616
+			controls_state = 754
+			controls_state = 753
+			controls_state = 283
+		}
+		completion_reward = {
+			add_ideas = imp_small_win
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_beginning_integration_of_new_territories
+		icon = GFX_IMP_beginning_of_tibetan_integration
+		x = 5
+		y = 11
+		cost = 3
+		prerequisite = {
+			focus = IMP_results_of_small_crusade
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = integration.2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_creation_of_adeptus_arbites
+		icon = GFX_IMP_creation_of_adeptus_arbites
+		x = 4
+		y = 12
+		cost = 3
+		prerequisite = {
+			focus = IMP_results_of_small_crusade
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			custom_effect_tooltip = adeptus_arbites.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,128 @@
+sub_units = {
+	# Small airframe
+
+	iom_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { iom_small_plane_airframe = 1 }
+		categories = { category_fighter }
+		land_air_wing_size = 100
+	}
+	iom_cv_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { iom_cv_small_plane_airframe = 1 }
+		categories = { category_fighter }
+		carrier_air_wing_size = 10
+		land_air_wing_size = 100
+	}
+
+	iom_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = { iom_small_plane_cas_airframe = 1 }
+		categories = { category_cas }
+		land_air_wing_size = 100
+	}
+	iom_cv_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = { iom_cv_small_plane_cas_airframe = 1 }
+		categories = { category_cas }
+		carrier_air_wing_size = 10
+		land_air_wing_size = 100
+	}
+
+	iom_nav_bomber = {
+		sprite = light_plane
+		priority = 3
+		active = yes
+		type = naval_bomber
+		need = { iom_small_plane_naval_bomber_airframe = 1 }
+		categories = { category_nav_bomber }
+		land_air_wing_size = 100
+	}
+	iom_cv_nav_bomber = {
+		sprite = light_plane
+		priority = 3
+		active = yes
+		type = naval_bomber
+		need = { iom_cv_small_plane_naval_bomber_airframe = 1 }
+		categories = { category_nav_bomber }
+		carrier_air_wing_size = 10
+		land_air_wing_size = 100
+	}
+
+	# Medium airframe
+
+	iom_tac_bomber = {
+		sprite = medium_plane
+		priority = 4
+		active = yes
+		type = tactical_bomber
+		need = { iom_medium_plane_airframe = 1 }
+		categories = { category_tac_bomber }
+		land_air_wing_size = 100
+	}
+
+	iom_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = heavy_fighter
+		need = { iom_medium_plane_fighter_airframe = 1 }
+		categories = { category_heavy_fighter }
+		land_air_wing_size = 100
+	}
+
+	iom_scout_plane = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = scout_plane
+		need = { iom_medium_plane_scout_plane_airframe = 1 }
+		categories = { category_scout_plane }
+		land_air_wing_size = 10
+	}
+
+	# Large airframe
+
+	iom_strat_bomber = {
+		sprite = heavy_plane
+		priority = 5
+		active = yes
+		type = strategic_bomber
+		need = { iom_large_plane_airframe = 1 }
+		categories = { category_strat_bomber }
+		land_air_wing_size = 100
+	}
+
+	iom_maritime_patrol_plane = {
+		sprite = heavy_plane
+		priority = 5
+		active = yes
+		type = maritime_patrol_plane
+		need = { iom_large_plane_maritime_patrol_plane_airframe = 1 }
+		categories = { category_strat_bomber }
+		land_air_wing_size = 10
+	}
+
+	# Other
+
+	iom_transport_plane = {
+		sprite = heavy_plane
+		priority = 6
+		active = yes
+		type = air_transport
+		need = { iom_transport_plane_equipment = 1 }
+		land_air_wing_size = 100
+	}
+}

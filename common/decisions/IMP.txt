@@ -1,0 +1,638 @@
+IMP_integration_cat = {
+
+	IMP_integrtation = {
+
+		allowed = { always = yes }
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_completed_focus = IMP_beginning_of_tibetan_integration
+			758 = {
+				has_resistance = yes
+			}
+		}
+		fire_only_once = no
+
+		cost = 100
+
+		cancel_trigger = {
+			NOT = { has_full_control_of_state = 758 }
+			
+		}
+
+		days_remove = 30
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						758 = { has_resistance = yes } 
+						758 = { compliance < 90 } 
+					}
+					
+				}
+				758 = {
+					add_compliance = 20
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						322 = { has_resistance = yes } 
+						322 = { compliance < 90 } 
+					}
+				}
+				322 = {
+					add_compliance = 20
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						757 = { has_resistance = yes } 
+						757 = { compliance < 90 } 
+					}
+				}
+				757 = {
+					add_compliance = 20
+				}
+			}
+		}
+
+		complete_effect = {
+		}
+
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	IMP_increase_popularty = {
+		allowed = { always = yes }
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_completed_focus = IMP_beginning_of_tibetan_integration
+		}
+		fire_only_once = no
+		cost = 30
+		days_remove = 50
+		remove_effect = {
+			add_popularity = { 
+				ideology = imperialism 
+				popularity = 0.05 
+			}
+		}
+	}
+
+	IMP_integrtation2 = {
+
+		allowed = { always = yes }
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_completed_focus = IMP_beginning_integration_of_new_territories
+		}
+		fire_only_once = no
+
+		cost = 200
+
+		cancel_trigger = {
+			NOT = { has_full_control_of_state = 758 }
+		}
+
+		days_remove = 50
+		remove_effect = {
+			if = {
+				limit = {
+					758 = { has_resistance = yes } 
+				}
+				758 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					322 = { has_resistance = yes } 
+				}
+				322 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					757 = { has_resistance = yes } 
+				}
+				757 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					323 = { has_resistance = yes } 
+				}
+				323 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					324 = { has_resistance = yes } 
+				}
+				324 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					287 = { has_resistance = yes } 
+				}
+				287 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					619 = { has_resistance = yes } 
+				}
+				619 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					617 = { has_resistance = yes } 
+				}
+				617 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					759 = { has_resistance = yes } 
+				}
+				759 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					618 = { has_resistance = yes } 
+				}
+				618 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					760 = { has_resistance = yes } 
+				}
+				760 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					604 = { has_resistance = yes } 
+				}
+				604 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					755 = { has_resistance = yes } 
+				}
+				755 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					756 = { has_resistance = yes } 
+				}
+				756 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					616 = { has_resistance = yes } 
+				}
+				616 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					754 = { has_resistance = yes } 
+				}
+				754 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					753 = { has_resistance = yes } 
+				}
+				753 = {
+					add_compliance = 10
+				}
+			}
+			if = {
+				limit = {
+					283 = { has_resistance = yes } 
+				}
+				283 = {
+					add_compliance = 10
+				}
+			}
+		}
+
+		complete_effect = {
+		}
+
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+IMP_reforms = {
+	IMP_exercise = {
+		allowed = { always = yes }
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_completed_focus = IMP_creation_of_officer_schools
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 50
+		remove_effect = {
+			army_experience = 30
+		}
+	}
+	IMP_mission_rails_1 = {
+		visible = {
+			has_completed_focus = IMP_prepare_for_next_crusade
+		}
+		allowed = {
+			always = no
+		}
+		days_mission_timeout = 100
+		fire_only_once = yes
+		available = {
+			has_railway_connection = {
+				start_province = 8121
+				target_province = 4987
+			}
+		}
+		highlight_states = {
+			highlight_provinces = {
+				8121
+				4987
+			}
+		}
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = new_infrastructure
+				add_idea = new_infrastructure1
+			}
+			custom_effect_tooltip = rails_mission_1.tt
+			activate_mission = IMP_mission_rails_2
+		}
+		timeout_effect = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = imperialism
+				popularity = -0.05
+			}
+		}
+
+	}
+	IMP_mission_rails_2 = {
+		visible = {
+			always = no
+		}
+		allowed = {
+			always = no
+		}
+		days_mission_timeout = 100
+		fire_only_once = yes
+		available = {
+			has_railway_connection = {
+				start_province = 5033
+				target_province = 8010
+			}
+		}
+		highlight_states = {
+			highlight_provinces = {
+				5033
+				8010
+			}
+		}
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = new_infrastructure1
+				add_idea = new_infrastructure2
+			}
+			custom_effect_tooltip = rails_mission_1.tt
+			activate_mission = IMP_mission_rails_3
+		}
+		timeout_effect = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = imperialism
+				popularity = -0.05
+			}
+		}
+	}
+	IMP_mission_rails_3 = {
+		visible = {
+			always = no
+		}
+		allowed = {
+			always = no
+		}
+		days_mission_timeout = 100
+		fire_only_once = yes
+		available = {
+			has_railway_connection = {
+				start_province = 2010
+				target_province = 4709
+			}
+		}
+		highlight_states = {
+			highlight_provinces = {
+				2010
+				4709
+			}
+		}
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = new_infrastructure2
+				add_idea = new_infrastructure3
+			}
+			custom_effect_tooltip = rails_mission_1.tt
+			activate_mission = IMP_mission_rails_4
+		}
+		timeout_effect = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = imperialism
+				popularity = -0.05
+			}
+		}
+	}
+	IMP_mission_rails_4 = {
+		visible = {
+			always = no
+		}
+		allowed = {
+			always = no
+		}
+		days_mission_timeout = 100
+		fire_only_once = yes
+		available = {
+			has_railway_connection = {
+				start_province = 2010
+				target_province = 7940
+			}
+		}
+		highlight_states = {
+			highlight_provinces = {
+				2010
+				7940
+			}
+		}
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = new_infrastructure3
+				add_idea = new_infrastructure4
+			}
+			custom_effect_tooltip = rails_mission_1.tt
+			add_stability = 0.1
+			617 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			323 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			324 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			604 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+		timeout_effect = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = imperialism
+				popularity = -0.05
+			}
+		}
+	}
+}
+
+IMP_border_wars = {
+	border_war_chanci = {
+		allowed = { always = yes }
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_completed_focus = IMP_expand_further
+			country_exists = SHX 
+			has_full_control_of_state = 616
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 30
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 616
+					on_win = imperium.7
+					on_lose = imperium.9
+					num_provinces = 3
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 746
+					num_provinces = 3
+				}
+			}
+		}
+	}
+	border_war_comchina = {
+		allowed = { always = yes }
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			has_completed_focus = IMP_expand_further
+			country_exists = PRC
+			has_full_control_of_state = 283
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 30
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 283
+					num_provinces = 3
+					on_win = imperium.8
+					on_lose = imperium.10
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 622
+					num_provinces = 3
+				}
+			}
+		}
+	}
+}
+IMP_dig_more_cat = {
+	dig_more_758 = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			has_completed_focus = IMP_dig_more
+		}
+		visible = {
+			has_full_control_of_state = 758
+		}
+		on_map_mode = map_and_decisions_view
+		highlight_states = {
+			highlight_state_targets = {
+				state = 758
+			}
+		}
+		icon = steel
+		fire_only_once = yes
+		cost = 50
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			758 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+	dig_more_322 = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 5
+			has_completed_focus = IMP_dig_more
+		}
+		visible = {
+			has_full_control_of_state = 322
+		}
+		on_map_mode = map_and_decisions_view
+		highlight_states = {
+			highlight_state_targets = {
+				state = 322
+			}
+		}
+		icon = tungsten
+		fire_only_once = yes
+		cost = 80
+		days_remove = 80
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			322 = {
+				add_resource = {
+					type = tungsten
+					amount = 16
+				}
+			}
+		}
+	}
+	dig_more_757 = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 8
+			has_completed_focus = IMP_dig_more
+		}
+		visible = {
+			has_full_control_of_state = 757
+		}
+		on_map_mode = map_and_decisions_view
+		highlight_states = {
+			highlight_state_targets = {
+				state = 757
+			}
+		}
+		icon = chromium
+		fire_only_once = yes
+		cost = 100
+		days_remove = 100
+		modifier = {
+			civilian_factory_use = 8
+		}
+		remove_effect = {
+			757 = {
+				add_resource = {
+					type = chromium
+					amount = 16
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,12 @@
+division_template = {
+	name = "Armored-Division"
+
+	regiments = {
+		iom_light_armor = { x = 0 y = 0 }
+		iom_light_armor = { x = 0 y = 1 }
+        iom_light_armor = { x = 0 y = 2 }
+        imp_motorized = { x = 1 y = 0 }
+		imp_motorized = { x = 1 y = 1 }
+		imp_motorized = { x = 1 y = 2 }
+	}
+}

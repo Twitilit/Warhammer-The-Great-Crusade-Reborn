@@ -1,0 +1,19 @@
+state={
+	id=970
+	name="STATE_970"
+	history={
+		owner = IMP
+		add_core_of = IMP
+		victory_points = {
+			1961 10
+		}
+
+	}
+	provinces={
+		1961 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=pastoral
+}

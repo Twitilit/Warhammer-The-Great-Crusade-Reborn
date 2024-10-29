@@ -1,0 +1,148 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+IMP_manufactorum_lucius = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_manufactorum_graia = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_henschel
+	
+	allowed = {
+		tag = IMP 
+	}
+}
+
+IMP_forge_world_mars = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_GER_MAN
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+IMP_kriks_factory = {
+	include = generic_artillery_organization
+	icon = GFX_idea_rheinmetall
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_forge_world_scaras = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mauser
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_forge_world_attila = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_opel
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+IMP_forge_world_buckhall = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_messerschmitt
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_forge_world_attar = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_junkers
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_forge_world_vulckan = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_heinkel
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_forge_world_navis = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+IMP_imperial_shipyard_hydropolis = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_germaniawerft
+	
+	allowed = {	
+		tag = IMP 
+	}
+}
+
+IMP_manufactorum_locrian = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_blohm_und_voss
+	
+	allowed = {	
+		tag = IMP 
+	}
+}

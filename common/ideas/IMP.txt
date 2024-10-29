@@ -1,0 +1,260 @@
+ideas = {
+
+	country = {
+
+		IMP_scientific_education = {
+			allowed = {
+				always = no
+			}
+			picture = scientific_education
+			
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		IMP_Financial_System = {
+			allowed = {
+				always = no
+			}
+			picture = Financial_System
+			
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		imp_small_win = {
+			allowed = {
+				always = no
+			}
+			picture = small_win
+
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				imperialism_drift = 0.2
+				political_power_cost = -0.5
+			}
+		}
+
+		new_infrastructure = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			modifier = {
+				imperialism_drift = 0.01
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.2
+			}
+		}
+		new_infrastructure1 = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			modifier = {
+				imperialism_drift = 0.05
+				production_speed_rail_way_factor = 0.3
+				production_speed_supply_node_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		new_infrastructure2 = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			modifier = {
+				imperialism_drift = 0.05
+				production_speed_rail_way_factor = 0.35
+				production_speed_supply_node_factor = 0.35
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		new_infrastructure3 = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			modifier = {
+				imperialism_drift = 0.05
+				production_speed_rail_way_factor = 0.4
+				production_speed_supply_node_factor = 0.4
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		new_infrastructure4 = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			modifier = {
+				imperialism_drift = 0.05
+				production_speed_rail_way_factor = 0.5
+				production_speed_supply_node_factor = 0.5
+				production_speed_industrial_complex_factor = 0.35
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+
+		IMP_dig_more_idea = {
+			allowed = {
+				always = no
+			}
+			picture = dig_more
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.2
+			}
+		}
+
+		more_equipment = {
+			allowed = {
+				always = no
+			}
+			picture = generic_infantry_bonus
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				iom_infantry_equipment = {
+					build_cost_ic = -0.2
+				}
+				infantry_armour_equipment = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		
+	}
+
+	economy = {
+		law = yes
+		use_list_view = yes
+
+		imperium_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = imperium_economy
+
+			available = {
+				original_tag = IMP
+				has_war_support > 0.8
+			}
+
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_expected_value = 0.15
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				production_speed_industrial_complex_factor = 0.3
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+
+	mobilization_laws = {
+		law = yes
+		use_list_view = yes
+
+		imperium_consciption = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = imperium_consciption
+
+			available = {
+				original_tag = IMP
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			modifier = {
+				conscription = 0.05
+				training_time_factor = 0.05
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+
+	industrial_concern = {
+
+		
+
+	}
+
+	tank_manufacturer = {
+		
+
+	}
+
+	naval_manufacturer = {
+
+		
+	}
+
+	materiel_manufacturer = {
+
+		
+
+	}
+
+	aircraft_manufacturer = {
+
+	}
+}

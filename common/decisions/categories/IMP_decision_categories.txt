@@ -1,0 +1,45 @@
+#################
+#### IMPERIUM ####
+#################
+
+IMP_integration_cat = {
+
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_beginning_of_tibetan_integration
+	}
+}
+
+IMP_reforms = {
+
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_creation_of_officer_schools
+	}
+}
+
+IMP_border_wars = {
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_expand_further
+	}
+}
+
+IMP_dig_more_cat = {
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_dig_more
+	}
+}

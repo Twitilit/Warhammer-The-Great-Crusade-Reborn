@@ -1,0 +1,604 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	### Engines
+	###LIGHTS
+	f100_engine_1x = {
+		abbreviation = "j1"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 15
+			build_cost_ic = 12
+			fuel_consumption = 0.1
+		}
+
+		multiply_stats = {
+			air_range = -0.1
+			maximum_speed = 0.15
+			air_agility = 0.05
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
+
+		can_convert_from = {
+			module_category = plane_engine_type
+			convert_cost_ic = 5
+		}
+	}
+	f100_engine_2x = {
+		abbreviation = "j1"
+		category = twin_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 21
+			build_cost_ic = 25
+			fuel_consumption = 0.15
+		}
+
+		multiply_stats = {
+			air_range = -0.1
+			maximum_speed = 0.20
+		}
+
+		can_convert_from = {
+			module_category = plane_engine_type
+			convert_cost_ic = 5
+		}
+	}
+	f122_engine_2_1x = {
+		abbreviation = "e21"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = f100_engine_1x
+
+		add_stats = {
+			thrust = 18
+			build_cost_ic = 14
+			fuel_consumption = 0.16
+		}
+
+		multiply_stats = {
+			air_range = -0.1
+			maximum_speed = 0.20
+			air_agility = 0.1
+		}
+
+		can_convert_from = {
+			module = f100_engine_1x
+			convert_cost_ic = 1.5
+		}
+	}
+	f122_engine_2_2x = {
+		abbreviation = "e21"
+		category = twin_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = f100_engine_2x
+
+		add_stats = {
+			thrust = 24
+			build_cost_ic = 28
+			fuel_consumption = 0.2
+		}
+
+		multiply_stats = {
+			air_range = -0.1
+			maximum_speed = 0.30
+			air_agility = 0.05
+		}
+
+		can_convert_from = {
+			module = f100_engine_2x
+			convert_cost_ic = 1.5
+		}
+	}
+	f140_engine_3_1x = {
+		abbreviation = "e31"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = f122_engine_2_1x
+
+		add_stats = {
+			thrust = 25
+			build_cost_ic = 16
+			fuel_consumption = 0.2
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.30
+			air_agility = 0.20
+		}
+
+		can_convert_from = {
+			module = f122_engine_2_1x
+			convert_cost_ic = 2.5
+		}
+	}
+	f140_engine_3_2x = {
+		abbreviation = "e31"
+		category = twin_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = f122_engine_2_2x
+
+		add_stats = {
+			thrust = 30
+			build_cost_ic = 32
+			fuel_consumption = 0.3
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.40
+			air_agility = 0.1
+		}
+
+		can_convert_from = {
+			module = f122_engine_2_2x
+			convert_cost_ic = 2.5
+		}
+	}
+
+	###MEDIUM
+	f75_engine_1x = {
+		abbreviation = "j3"
+		category = medium_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 25
+			build_cost_ic = 26
+			fuel_consumption = 0.9
+		}
+
+		multiply_stats = {
+			air_range = -0.2
+			maximum_speed = 0.2
+		}
+
+		can_convert_from = {
+			module_category = medium_plane_engine_type
+			convert_cost_ic = 15
+		}
+	}
+	f75_engine_2x = {
+		abbreviation = "j3"
+		category = medium_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 30
+			build_cost_ic = 38
+			fuel_consumption = 0.9
+		}
+
+		multiply_stats = {
+			air_range = -0.2
+			maximum_speed = 0.3
+		}
+
+		can_convert_from = {
+			module_category = medium_plane_engine_type
+			convert_cost_ic = 15
+		}
+	}
+
+	f200_engine_1x = {
+		abbreviation = "j3"
+		category = medium_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = f75_engine_1x
+
+		add_stats = {
+			thrust = 34
+			build_cost_ic = 30
+			fuel_consumption = 0.5
+		}
+
+		multiply_stats = {
+			air_range = -0.1
+			maximum_speed = 0.3
+		}
+
+		can_convert_from = {
+			module = f75_engine_1x
+			convert_cost_ic = 15
+		}
+	}
+	f200_engine_2x = {
+		abbreviation = "j3"
+		category = medium_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = f75_engine_2x
+
+		add_stats = {
+			thrust = 40
+			build_cost_ic = 45
+			fuel_consumption = 0.6
+		}
+
+		multiply_stats = {
+			air_range = -0.1
+			maximum_speed = 0.4
+		}
+
+		can_convert_from = {
+			module = f75_engine_2x
+			convert_cost_ic = 15
+		}
+	}
+
+	###LARGE
+	j79_engine_1_4x = {
+		abbreviation = "e14"
+		category = quad_large_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			thrust = 32
+			build_cost_ic = 48
+			fuel_consumption = 0.64
+		}
+	}
+	j88_engine_2_4x = {
+		abbreviation = "e14"
+		category = quad_large_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = j79_engine_1_4x
+
+		add_stats = {
+			thrust = 40
+			build_cost_ic = 56
+			fuel_consumption = 0.64
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.20
+			air_range = 0.2
+		}
+
+		can_convert_from = {
+			module = j79_engine_1_4x
+			convert_cost_ic = 6
+		}
+	}
+	j100_engine_3_4x = {
+		abbreviation = "e14"
+		category = quad_large_plane_engine_type
+		sfx = sfx_ui_sd_module_engine
+		parent = j88_engine_2_4x
+
+		add_stats = {
+			thrust = 64
+			build_cost_ic = 64
+			fuel_consumption = 0.64
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.30
+			air_range = 0.4
+		}
+
+		can_convert_from = {
+			module = j88_engine_2_4x
+			convert_cost_ic = 10
+		}
+	}
+
+	###WEAPONS
+	###ROCKETS
+	missile_launchers = {
+		abbreviation = "mll"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			build_cost_ic = 1
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 6
+				weight = 2
+			}
+		}
+		dismantle_cost_ic = 0.5
+	}
+	hellstrike_missiles = {
+		abbreviation = "hsm"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			build_cost_ic = 4
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 20
+				weight = 1
+			}
+		}
+		dismantle_cost_ic = 0.5
+	}
+	vengeance_missiles = {
+		abbreviation = "hsm"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+
+		add_stats = {
+			build_cost_ic = 3
+		}
+		xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 20
+				weight = 4
+			}
+		}
+		dismantle_cost_ic = 0.5
+	}
+	###Bolters
+	bolters_2x = {
+		abbreviation = "blr2"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 8
+			build_cost_ic = 1.5
+			weight = 1
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	heavy_bolters_2x = {
+		abbreviation = "hvb2"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 15
+			build_cost_ic = 3
+			weight = 2
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	###AUTOCANONS 
+	aircraft_autocannon_1_1x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 10
+			build_cost_ic = 2
+			air_agility = -0.2
+			weight = 3
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	aircraft_autocannon_1_2x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 20
+			build_cost_ic = 4
+			air_agility = -1
+			weight = 5
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 2
+			}
+		}
+		can_convert_from = {
+			module = aircraft_autocannon_1_1x
+			convert_cost_ic = 2
+		}
+	}
+
+	aircraft_autocannon_2_1x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+		parent = aircraft_autocannon_1_1x
+
+		add_stats = {
+			air_attack = 18
+			build_cost_ic = 4
+			air_agility = -1
+			weight = 5
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	aircraft_autocannon_2_2x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+		parent = aircraft_autocannon_1_2x
+		add_stats = {
+			air_attack = 36
+			build_cost_ic = 8
+			air_agility = -2
+			weight = 8
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 6
+			}
+		}
+		can_convert_from = {
+			module = aircraft_autocannon_2_1x
+			convert_cost_ic = 2
+		}
+	}
+
+	###LASWEAPON
+	aircraft_lascannon_1_1x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 8
+			build_cost_ic = 1
+			weight = 1
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	aircraft_lascannon_1_2x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+
+		add_stats = {
+			air_attack = 18
+			build_cost_ic = 3
+			weight = 2
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 2
+			}
+		}
+		can_convert_from = {
+			module = aircraft_lascannon_1_1x
+			convert_cost_ic = 2
+		}
+	}
+
+	aircraft_lascannon_2_1x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+		parent = aircraft_lascannon_1_1x
+
+		add_stats = {
+			air_attack = 12
+			build_cost_ic = 2
+			weight = 1
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+	}
+	aircraft_lascannon_2_2x = {
+		abbreviation = "ac11"
+		category = fighter_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { fighter heavy_fighter }
+		parent = aircraft_lascannon_1_2x
+		add_stats = {
+			air_attack = 28
+			build_cost_ic = 4
+			air_agility = -1
+			weight = 3
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 4
+			}
+		}
+		can_convert_from = {
+			module = aircraft_lascannon_2_1x
+			convert_cost_ic = 2
+		}
+	}
+	
+
+}

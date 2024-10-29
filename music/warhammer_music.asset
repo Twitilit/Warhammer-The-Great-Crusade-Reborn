@@ -1,0 +1,50 @@
+music = {
+	name = "Blood_Ravens_Approach"
+	file = "Blood_Ravens_Approach.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Dawn_of_War"
+	file = "Dawn_of_War.ogg"
+	volume = 0.65
+}
+music = {
+	name = "fallen_city"
+	file = "fallen_city.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Force_Commander_Theme"
+	file = "Force_Commander_Theme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Gabriel_War_Cry"
+	file = "Gabriel_War_Cry.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Gathering_of_the_Clans"
+	file = "Gathering_of_the_Clans.ogg"
+	volume = 0.65
+}
+music = {
+	name = "March_of_the_Emperor"
+	file = "March_of_the_Emperor.ogg"
+	volume = 0.65
+}
+music = {
+	name = "outer_reaches"
+	file = "outer_reaches.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Sorcery_and_Might"
+	file = "Sorcery_and_Might.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Volcano"
+	file = "Volcano.ogg"
+	volume = 0.65
+}

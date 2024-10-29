@@ -1,0 +1,143 @@
+spriteTypes = {	
+	spriteType = {
+        name = GFX_IMP_warp_anomaly
+        texturefile = gfx/interface/goals/goal_imperium_first.dds
+    } 
+    spriteType = {
+        name = GFX_IMP_tanks_project
+        texturefile = gfx/interface/goals/goal_generic_army_tanks.dds
+    } 
+    spriteType = {
+        name = GFX_IMP_infrastructure_tanks
+        texturefile = gfx/interface/goals/goal_generic_build_tank.dds
+    }  
+    spriteType = {
+        name = GFX_IMP_infrastructure_generic
+        texturefile = gfx/interface/goals/goal_generic_construct_infrastructure.dds
+    }  
+    spriteType = {
+        name = GFX_IMP_production
+        texturefile = gfx/interface/goals/goal_generic_production.dds
+    }
+    spriteType = {
+        name = GFX_IMP_mobile_inf
+        texturefile = gfx/interface/goals/focus_generic_truck.dds
+    } 
+    spriteType = {
+        name = GFX_IMP_prep_next
+        texturefile = gfx/interface/goals/goal_generic_military_sphere.dds
+    } 
+	spriteType = {
+        name = GFX_IMP_appearance_in_tibet
+        texturefile = gfx/interface/goals/goal_generic_CAS.dds
+    } 
+	spriteType = {
+        name = GFX_IMP_terrain_exploration
+        texturefile = gfx/interface/goals/goal_generic_CAS.dds
+    } 
+	spriteType = {
+        name = GFX_IMP_council_dialogue
+        texturefile = gfx/interface/goals/goal_generic_position_armies.dds
+    } 
+	spriteType = {
+        name = GFX_IMP_deployment_of_adeptus_custodes_camps
+        texturefile = gfx/interface/goals/goal_generic_defence.dds
+    }
+	spriteType = {
+        name = GFX_IMP_beginning_of_tibetan_integration
+        texturefile = gfx/interface/goals/goal_generic_small_arms.dds
+    }
+	spriteType = {
+        name = GFX_IMP_creation_of_officer_schools
+        texturefile = gfx/interface/goals/goal_generic_position_armies.dds
+    }
+	spriteType = {
+        name = GFX_IMP_army_reforms
+        texturefile = gfx/interface/goals/focus_chi_army_reform.dds
+    }
+	spriteType = {
+        name = GFX_IMP_recruitment_of_the_first_divisions
+        texturefile = gfx/interface/goals/focus_astra_militarum.dds
+    }
+	spriteType = {
+        name = GFX_IMP_start_small_crusade
+        texturefile = gfx/interface/goals/goal_generic_major_war.dds
+    }
+	spriteType = {
+        name = GFX_IMP_army_technologies
+        texturefile = gfx/interface/goals/goal_generic_CAS.dds
+    }
+	spriteType = {
+        name = GFX_IMP_educational_reforms
+        texturefile = gfx/interface/goals/goal_generic_scientific_exchange.dds
+    }
+	spriteType = {
+        name = GFX_IMP_financial_reforms
+        texturefile = gfx/interface/goals/goal_generic_consumer_goods.dds
+    }
+	spriteType = {
+        name = GFX_IMP_resources_oil
+        texturefile = gfx/interface/goals/goal_generic_oil_refinery.dds
+    }
+	spriteType = {
+        name = GFX_IMP_resources_steel
+        texturefile = gfx/interface/goals/focus_generic_steel.dds
+    }
+	spriteType = {
+        name = GFX_IMP_resources_tungsten
+        texturefile = gfx/interface/goals/focus_generic_tungsten.dds
+    }
+	spriteType = {
+        name = GFX_IMP_resources
+        texturefile = gfx/interface/goals/goal_generic_construction2.dds
+    }
+	spriteType = {
+        name = GFX_IMP_resources
+        texturefile = gfx/interface/goals/goal_generic_construction2.dds
+    }
+	spriteType = {
+        name = GFX_IMP_results_of_small_crusade
+        texturefile = gfx/interface/goals/goal_imp_1.dds
+    }
+	spriteType = {
+        name = GFX_IMP_improve_guard
+        texturefile = gfx/interface/goals/goal_generic_army_doctrines.dds
+    }
+	spriteType = {
+        name = GFX_IMP_creation_of_adeptus_arbites
+        texturefile = gfx/interface/goals/focus_adeptus_arbites.dds
+    }
+	
+	####IDEAS
+	
+	spriteType = {
+        name = GFX_idea_scientific_education
+        texturefile = gfx/interface/ideas/generic_research_bonus.dds
+    }
+	spriteType = {
+        name = GFX_idea_Financial_System
+        texturefile = gfx/interface/ideas/generic_economic_increase.dds
+    }
+	spriteType = {
+        name = GFX_idea_small_win
+        texturefile = gfx/interface/ideas/IOM_officio_sabatorum.tga
+    }
+    spriteType = {
+        name = GFX_idea_imperium_economy
+        texturefile = gfx/interface/ideas/idea_war_economy.tga
+    }
+    spriteType = {
+        name = GFX_idea_imperium_consciption
+        texturefile = gfx/interface/ideas/idea_imperium_conscription.tga
+    }
+    spriteType = {
+        name = GFX_idea_IMP_dig_more_idea
+        texturefile = gfx/interface/ideas/idea_ast_all_in.tga
+    }
+    spriteType = {
+        name = GFX_idea_new_infrastructure
+        texturefile = gfx/interface/ideas/idea_generic_build_infrastructure.tga
+    }
+
+
+}
