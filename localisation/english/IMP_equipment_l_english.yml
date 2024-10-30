@@ -10,6 +10,13 @@
  super_heavy_infantry_equipment: "Heavy Bolters"
  sniper_heavy_infantry_equipment: "Sniper Bolters"
  power_armor_equipment_0: "Power Armor"
- imp_motorized_equipment: "Trucks"
- imp_mechanized_equipment: "Armored Personnel Carriers"
+ imp_motorized_equipment: "Imperial trucks"
+ imp_mechanized_equipment: "Imperial armored Personnel Carriers"
  imp_armored_car_equipment: "Sentinels"
+ power_armor_equipment: "Power armor"
+ melee_weapons: "Melee weapon"
+ iom_artillery_equipment: "Imperial artillery"
+ iom_anti_tank_equipment: "Imperial AT Artillery"
+ iom_anti_air_equipment: "Imperial AA Artillery"
+
+ 

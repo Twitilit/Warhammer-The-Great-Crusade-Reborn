@@ -1681,10 +1681,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			
-		}
-
 		research_cost = 2
 		start_year = 1936
 		folder = {

@@ -795,6 +795,78 @@ equipments = {
         }
     }
 
+	melee_weapons = {
+		year = 1936
+		is_archetype = yes
+		picture = archetype_infantry_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		active = no
+		#Misc Abilities
+		reliability = 0.8
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 8
+		#Offensive Abilities
+		soft_attack = 20
+		hard_attack = 0
+		ap_attack = 0
+		#Space taken in convoy
+		lend_lease_cost = 1
+		build_cost_ic = 3
+	}
+	melee_weapons_0 = {
+        year = 1936
+        archetype = melee_weapons
+        priority = 1
+        visual_level = 1
+        resources = {
+            steel = 2
+        }
+    }
+	melee_weapons_1 = {
+        year = 1938
+        archetype = melee_weapons
+		parent = melee_weapons_0
+        priority = 2
+        visual_level = 2
+		defense = 35
+		soft_attack = 25
+		build_cost_ic = 3.5
+    }
+	melee_weapons_2 = {
+        year = 1941
+        archetype = melee_weapons
+		parent = melee_weapons_1
+        priority = 3
+        visual_level = 3
+		defense = 40
+		soft_attack = 30
+		build_cost_ic = 4.5
+    }
+	melee_weapons_3 = {
+        year = 1943
+        archetype = melee_weapons
+		parent = melee_weapons_2
+        priority = 3
+        visual_level = 3
+		defense = 45
+		soft_attack = 34
+		build_cost_ic = 5
+    }
+	melee_weapons_4 = {
+        year = 1945
+        archetype = melee_weapons
+		parent = melee_weapons_3
+        priority = 4
+        visual_level = 4
+		defense = 50
+		soft_attack = 38
+		build_cost_ic = 5.5
+    }
+
 
 
 

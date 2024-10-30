@@ -1120,6 +1120,7 @@ characters = {
         portraits = {
             army = {
                 large = "GFX_portrait_IMP_Francois_Dubois"
+                small = "GFX_portrait_IMP_Francois_Dubois_small"
             }
         }
         corps_commander = {
@@ -1133,12 +1134,31 @@ characters = {
                 has_completed_focus = IMP_creation_of_officer_schools
             }
         }
+        advisor={
+            available = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+			slot = air_chief
+			idea_token = IMP_Francois_Dubois
+			ledger = air
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				air_chief_reform_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
     }
     IMP_Alessandro_Rossini = {
         name = IMP_Alessandro_Rossini
         portraits = {
             army = {
                 large = "GFX_portrait_IMP_Alessandro_Rossini"
+                small = "GFX_portrait_IMP_Alessandro_Rossini_small"
             }
         }
         corps_commander = {
@@ -1152,6 +1172,24 @@ characters = {
                 has_completed_focus = IMP_creation_of_officer_schools
             }
         }
+        advisor={
+            available = {
+                has_completed_focus = IMP_creation_of_officer_schools
+            }
+			slot = air_chief
+			idea_token = IMP_Alessandro_Rossini
+			ledger = air
+			allowed = {
+				original_tag = IMP
+			}
+			traits = {
+				air_chief_ground_support_3
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
     }
     IMP_Viktor_Markovich = {
         name = IMP_Viktor_Markovich

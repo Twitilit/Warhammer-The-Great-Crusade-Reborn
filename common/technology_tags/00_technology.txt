@@ -254,6 +254,13 @@ technology_folders = {
 		ledger = army
 	}
 
+	spacemarines_folder = {
+		available = {
+			original_tag = IMP
+		}
+		ledger = army
+	}
+
 	imperium_industry_folder = {
 		ledger = civilian
 		available = {

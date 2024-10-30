@@ -607,6 +607,12 @@ script_enum_equipment_bonus_type = {
 	power_armor_equipment_6
 	power_armor_equipment_7
 	power_armor_equipment_8
+	melee_weapons
+	melee_weapons_0
+	melee_weapons_1
+	melee_weapons_2
+	melee_weapons_3
+	melee_weapons_4
 	custodes_armor_equipment
 	custodes_armor_equipment_0
 	imp_infantry_equipment

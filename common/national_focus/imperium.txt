@@ -456,7 +456,7 @@ focus_tree = {
     			category = cat_light_armor
 			}
 			set_technology = {
-				iom_heavyb_infantry_equipment = 1
+				iom_heavyb_infantry_weapons = 1
 			}
 		}
 		ai_will_do = {

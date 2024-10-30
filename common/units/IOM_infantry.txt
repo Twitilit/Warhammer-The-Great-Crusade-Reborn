@@ -34,6 +34,7 @@ sub_units = {
 		need = {
 			heavy_infantry_equipment = 100
 			power_armor_equipment = 100
+			melee_weapons = 20
 		}
 	}
 	super_heavy_space_marines = {

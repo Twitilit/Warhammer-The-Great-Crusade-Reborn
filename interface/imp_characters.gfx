@@ -12,6 +12,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/IMP/idea_IMP_malcador.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_IMP_Francois_Dubois_small"
+		texturefile = "gfx/interface/ideas/IMP/idea_Francois_Dubois.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_IMP_Alessandro_Rossini_small"
+		texturefile = "gfx/interface/ideas/IMP/idea_Alessandro_Rossini.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_IMP_Zagreus_Kane_small_civilain"
 		texturefile = "gfx/interface/ideas/IMP/idea_Zagreus_Kane.dds"
 	}

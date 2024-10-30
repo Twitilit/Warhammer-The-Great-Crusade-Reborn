@@ -261,6 +261,27 @@ spriteTypes = {
 		name = "GFX_iom_armored_car_equipment2_medium"
 		texturefile = "gfx/interface/technologies/sentinel_2.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_iom_melee_0_medium"
+		texturefile = "gfx/interface/technologies/melee_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_iom_melee_1_medium"
+		texturefile = "gfx/interface/technologies/melee_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_iom_melee_2_medium"
+		texturefile = "gfx/interface/technologies/melee_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_iom_melee_3_medium"
+		texturefile = "gfx/interface/technologies/melee_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_iom_melee_4_medium"
+		texturefile = "gfx/interface/technologies/melee_4.dds"
+	}
 	###industry
 	###production
 	SpriteType = {

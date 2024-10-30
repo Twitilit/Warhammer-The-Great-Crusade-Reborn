@@ -539,775 +539,8 @@ technologies = {
 			factor = 1
 		}
 	}
-	iom_heavy_infantry_equipment = {
-		enable_equipments = {
-			heavy_infantry_equipment_0
-		}	
-
-		enable_subunits = {
-			space_marines
-		}
-
-		path = {
-			leads_to_tech = iom_heavy_infantry_equipment1
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = iom_super_heavy_infantry_equipment
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = iom_sniper_heavy_infantry_equipment
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = -1 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_sniper_heavy_infantry_equipment = {
-		enable_equipments = {
-			sniper_heavy_infantry_equipment_0
-		}	
-
-		enable_subunits = {
-			sniper_heavy_space_marines
-		}
-
-		path = {
-			leads_to_tech = iom_subsniper_heavy_infantry_equipment
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = imperium_folder
-			position = { x = 8 y = 2 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_subsniper_heavy_infantry_equipment = {
-
-		sniper_heavy_space_marines = {
-			recon = 1
-		}
-
-		path = {
-			leads_to_tech = iom_sniper_heavy_infantry_equipment1
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = imperium_folder
-			position = { x = 8 y = 6 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_sniper_heavy_infantry_equipment1 = {
-		enable_equipments = {
-			sniper_heavy_infantry_equipment_1
-		}	
-
-		path = {
-			leads_to_tech = iom_subsniper_heavy_infantry_equipment1
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = imperium_folder
-			position = { x = 8 y = 12 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_subsniper_heavy_infantry_equipment1 = {
-		sniper_heavy_space_marines = {
-			soft_attack = 2
-		}
-		
-
-		research_cost = 4
-		start_year = 1945
-		folder = {
-			name = imperium_folder
-			position = { x = 8 y = 18 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_super_heavy_infantry_equipment = {
-		enable_equipments = {
-			super_heavy_infantry_equipment_0
-		}	
-
-		enable_subunits = {
-			super_heavy_space_marines
-		}
-
-		path = {
-			leads_to_tech = iom_subsuper_heavy_infantry_equipment
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 2 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_subsuper_heavy_infantry_equipment = {
-		super_heavy_space_marines ={
-			breakthrough = 0.05
-		}
-
-		path = {
-			leads_to_tech = iom_super_heavy_infantry_equipment1
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1938
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 4 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_super_heavy_infantry_equipment1 = {
-		enable_equipments = {
-			super_heavy_infantry_equipment_1
-		}	
-
-		path = {
-			leads_to_tech = iom_subsuper_heavy_infantry_equipment1
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 6 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_subsuper_heavy_infantry_equipment1 = {
-		super_heavy_space_marines ={
-			breakthrough = 0.05
-		}
-
-		path = {
-			leads_to_tech = iom_super_heavy_infantry_equipment2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1940
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 8 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_super_heavy_infantry_equipment2 = {
-		enable_equipments = {
-			super_heavy_infantry_equipment_2
-		}	
-
-		path = {
-			leads_to_tech = iom_super_heavy_infantry_equipment3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1941
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 10 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_super_heavy_infantry_equipment3 = {
-		enable_equipments = {
-			super_heavy_infantry_equipment_3
-		}	
-
-		path = {
-			research_cost_coeff = 1
-			leads_to_tech = iom_subsuper_heavy_infantry_equipment2
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 13 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_subsuper_heavy_infantry_equipment2 = {
-		super_heavy_space_marines ={
-			breakthrough = 0.1
-		}
-
-		research_cost = 1.5
-		start_year = 1944
-		folder = {
-			name = imperium_folder
-			position = { x = 6 y = 15 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	iom_heavy_infantry_equipment1 = {
-		enable_equipments = {
-			heavy_infantry_equipment_1
-		}	
-
-		path = {
-			leads_to_tech = iom_subheavy_infantry_equipment1
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1937
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 2 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_subheavy_infantry_equipment1 = {	
-		space_marines = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-		legio_custodes = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-
-		path = {
-			leads_to_tech = iom_heavy_infantry_equipment2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1938
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 4 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_heavy_infantry_equipment2 = {
-		enable_equipments = {
-			heavy_infantry_equipment_2
-		}	
-
-		path = {
-			leads_to_tech = iom_heavy_infantry_equipment3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 6 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_heavy_infantry_equipment3 = {
-		enable_equipments = {
-			heavy_infantry_equipment_3
-		}	
-
-		path = {
-			leads_to_tech = iom_subheavy_infantry_equipment2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1940
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 9 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_subheavy_infantry_equipment2 = {	
-		space_marines = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-		legio_custodes = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-
-		path = {
-			leads_to_tech = iom_heavy_infantry_equipment4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1941
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 11 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_heavy_infantry_equipment4 = {
-		enable_equipments = {
-			heavy_infantry_equipment_4
-		}	
-
-		path = {
-			leads_to_tech = iom_heavy_infantry_equipment5
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 13 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_heavy_infantry_equipment5 = {
-		enable_equipments = {
-			heavy_infantry_equipment_5
-		}	
-
-		path = {
-			leads_to_tech = iom_subheavy_infantry_equipment3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1944
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 16 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_subheavy_infantry_equipment3 = {	
-		space_marines = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-		legio_custodes = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-
-		path = {
-			leads_to_tech = iom_heavy_infantry_equipment6
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1945
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 18 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_heavy_infantry_equipment6 = {
-		enable_equipments = {
-			heavy_infantry_equipment_6
-		}	
-
-		research_cost = 1.5
-		start_year = 1946
-		folder = {
-			name = imperium_folder
-			position = { x = 4 y = 20 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment = {
-		enable_equipments = {
-			power_armor_equipment_0
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment1
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = -1 }
-		}
-
-		categories = {
-			infantry_weapons
-			power_armor
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment1 = {
-		enable_equipments = {
-			power_armor_equipment_1
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1937
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 2 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment2 = {
-		enable_equipments = {
-			power_armor_equipment_2
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment3
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1938
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 5 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment3 = {
-		enable_equipments = {
-			power_armor_equipment_3
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment4
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1939
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 8 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment4 = {
-		enable_equipments = {
-			power_armor_equipment_4
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment5
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1940
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 11 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment5 = {
-		enable_equipments = {
-			power_armor_equipment_5
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment6
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1941
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 14 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment6 = {
-		enable_equipments = {
-			power_armor_equipment_6
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment7
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 17 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment7 = {
-		enable_equipments = {
-			power_armor_equipment_7
-		}	
-
-		path = {
-			leads_to_tech = iom_power_armor_equipment8
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1943
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 20 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_equipment8 = {
-		enable_equipments = {
-			power_armor_equipment_8
-		}	
-
-		research_cost = 1.5
-		start_year = 1945
-		folder = {
-			name = imperium_folder
-			position = { x = 10 y = 23 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	iom_power_armor_custodes = {
-		enable_equipments = {
-			custodes_armor_equipment_0
-		}	
-
-		enable_subunits = {
-			legio_custodes
-		}
-
-		research_cost = 1.5
-		start_year = 1936
-		folder = {
-			name = imperium_folder
-			position = {  x = 0 y = 15 }
-		}
-
-		categories = {
-			infantry_weapons
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	
+	
 	iom_motorized_equipment = {
 		enable_equipments = {
 			imp_motorized_equipment_0
@@ -1336,7 +569,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = -1 }
+			position = { x = 4 y = -1 }
 		}
 		categories = {
 			infantry_weapons
@@ -1367,7 +600,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = 5 }
+			position = { x = 4 y = 5 }
 		}
 		categories = {
 			infantry_weapons
@@ -1392,7 +625,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = 7 }
+			position = { x = 4 y = 7 }
 		}
 		categories = {
 			infantry_weapons
@@ -1416,7 +649,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = 9 }
+			position = { x = 4 y = 9 }
 		}
 		categories = {
 			infantry_weapons
@@ -1441,7 +674,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = 11 }
+			position = { x = 4 y = 11 }
 		}
 		categories = {
 			infantry_weapons
@@ -1465,7 +698,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = 13 }
+			position = { x = 4 y = 13 }
 		}
 		categories = {
 			infantry_weapons
@@ -1485,7 +718,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = imperium_folder
-			position = { x = 12 y = 15 }
+			position = { x = 4 y = 15 }
 		}
 		categories = {
 			infantry_weapons
@@ -1512,7 +745,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = imperium_folder
-			position = { x = 14 y = 2 }
+			position = { x = 6 y = 2 }
 		}
 		categories = {
 			infantry_weapons
@@ -1537,7 +770,7 @@ technologies = {
 		start_year = 1937
 		folder = {
 			name = imperium_folder
-			position = { x = 14 y = 4 }
+			position = { x = 6 y = 4 }
 		}
 		categories = {
 			infantry_weapons
@@ -1561,7 +794,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = imperium_folder
-			position = { x = 14 y = 6 }
+			position = { x = 6 y = 6 }
 		}
 		categories = {
 			infantry_weapons
@@ -1587,7 +820,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = imperium_folder
-			position = { x = 14 y = 8 }
+			position = { x = 6 y = 8 }
 		}
 		categories = {
 			infantry_weapons
@@ -1606,7 +839,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = imperium_folder
-			position = { x = 14 y = 10 }
+			position = { x = 6 y = 10 }
 		}
 		categories = {
 			infantry_weapons
@@ -1647,7 +880,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = imperium_folder
-			position = { x = 17 y = @1938 }
+			position = { x = 10 y = @1938 }
 		}
 		
 		categories = {
@@ -1684,7 +917,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = imperium_folder
-			position = { x = 16 y = @1940 }
+			position = { x = 9 y = @1940 }
 		}
 		
 		categories = {
@@ -1716,7 +949,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = imperium_folder
-			position = { x = 18 y = @1940 }
+			position = { x = 11 y = @1940 }
 		}
 		
 		categories = {
@@ -1751,7 +984,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = imperium_folder
-			position = { x = 16 y = @1942 }
+			position = { x = 9 y = @1942 }
 		}
 		
 		categories = {
@@ -1785,7 +1018,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = imperium_folder
-			position = { x = 18 y = @1942 }
+			position = { x = 11 y = @1942 }
 		}
 		
 		categories = {
@@ -1813,7 +1046,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = imperium_folder
-			position = { x = 17 y = @1944 }
+			position = { x = 10 y = @1944 }
 		}
 		
 		categories = {
@@ -1827,4 +1060,6 @@ technologies = {
 			factor = 0.7
 		}
 	}
+
+	
 }
