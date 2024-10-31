@@ -3,7 +3,7 @@ focus_tree = {
 
 	continuous_focus_position = {
 		x = 0
-		y = 2500
+		y = 3500
 	}
 	
 	country = {
@@ -440,7 +440,7 @@ focus_tree = {
 		y = 11
 		cost = 5
 		prerequisite = {
-			focus = IMP_army_technologies
+			focus = IMP_army_inovation
 		}
 		prerequisite = {
 			focus = IMP_recruit_more
@@ -912,15 +912,13 @@ focus_tree = {
 			factor = 1
 		}
 	}
+
 	focus = {
-		id = IMP_deal_with_china
-		icon = GFX_IMP_financial_reforms
-		x = 5
+		id = IMP_council_dialogue2
+		icon = GFX_IMP_start_small_crusade
+		x = 6
 		y = 13
-		cost = 5
-		mutually_exclusive = {
-			focus = IMP_deal_with_japan
-		}
+		cost = 3
 		prerequisite = {
 			focus = IMP_expand_further
 		}
@@ -932,116 +930,21 @@ focus_tree = {
 				id = imperium.11
 				days = 1
 			}
+			add_political_power = 50
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	#############ASIA###########
 	focus = {
-		id = IMP_mobilize
-		icon = GFX_IMP_recruitment_of_the_first_divisions
-		x = 6
-		y = 14
-		cost = 5
-		prerequisite = {
-			focus = IMP_deal_with_china
-			focus = IMP_deal_with_japan
-		}
-		available = {
-			OR = {
-				has_war_with = JAP
-				has_war_with = CHI
-			}
-			
-		}
-		completion_reward = {
-			add_manpower = 500000
-			add_stability = -0.1
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = IMP_backstab_jap
+		id = IMP_council_dialogue_asia
 		icon = GFX_IMP_start_small_crusade
-		x = 8
+		x = 10
 		y = 14
-		cost = 5
-		prerequisite = {
-			focus = IMP_deal_with_japan
-		}
-		available = {
-			has_war = no
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = JAP
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = IMP_backstab_chi
-		icon = GFX_IMP_start_small_crusade
-		x = 4
-		y = 14
-		cost = 5
-		prerequisite = {
-			focus = IMP_deal_with_china
-		}
-		available = {
-			has_war = no
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = CHI
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = IMP_stabilize_imperium
-		icon = GFX_IMP_creation_of_adeptus_arbites
-		x = 6
-		y = 15
 		cost = 20
 		prerequisite = {
-			focus = IMP_backstab_chi
-			focus = IMP_backstab_jap
-		}
-		available = {
-			has_war = no
-			has_full_control_of_state = 613
-			has_full_control_of_state = 282
-		}
-		completion_reward = {
-			custom_effect_tooltip = stabilize_imp.tt
-			every_controlled_state = {
-				add_core_of = THIS
-			}
-			
-			
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = IMP_deal_with_japan
-		icon = GFX_IMP_financial_reforms
-		x = 7
-		y = 13
-		cost = 5
-		mutually_exclusive = {
-			focus = IMP_deal_with_china
-		}
-		prerequisite = {
-			focus = IMP_expand_further
+			focus = IMP_council_dialogue2
 		}
 		available = {
 			has_government = imperialism
@@ -1051,11 +954,1005 @@ focus_tree = {
 				id = imperium.12
 				days = 1
 			}
+			
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
+
+	focus = {
+		id = IMP_council_dialogue_asia_japan
+		icon = GFX_IMP_start_small_crusade
+		x = 6
+		y = 15
+		cost = 20
+		prerequisite = {
+			focus = IMP_council_dialogue_asia
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_japan_deal_with_china
+		icon = GFX_IMP_financial_reforms
+		x = 5
+		y = 16
+		cost = 3
+		bypass = {
+			NOT = {
+				country_exists = CHI
+			}
+		}
+		prerequisite = {
+			focus = IMP_council_dialogue_asia_japan
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = imperium.18
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_japan_buy_ships
+		icon = GFX_IMP_financial_reforms
+		x = 7
+		y = 16
+		cost = 3
+		prerequisite = {
+			focus = IMP_council_dialogue_asia_japan
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = imperium.21
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_prepare_for_attack_jap
+		icon = GFX_IMP_start_small_crusade
+		x = 6
+		y = 17
+		cost = 3
+		bypass = {
+			NOT = {
+				AND = {
+					has_full_control_of_state = 596
+					has_full_control_of_state = 595
+				}
+			}
+		}
+		prerequisite = {
+			focus = IMP_japan_buy_ships
+		}
+		prerequisite = {
+			focus = IMP_japan_deal_with_china
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+				mtg_transport = 1
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 596
+				}
+				596 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 595
+				}
+				595 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 5
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_attack_japan
+		icon = GFX_IMP_start_small_crusade
+		x = 6
+		y = 18
+		cost = 3
+		prerequisite = {
+			focus = IMP_prepare_for_attack_jap
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_fin_war_japan
+		icon = GFX_IMP_start_small_crusade
+		x = 6
+		y = 21
+		cost = 3
+		prerequisite = {
+			focus = IMP_attack_japan
+		}
+		available = {
+			has_government = imperialism
+			NOT = {
+				country_exists = JAP
+			}
+		}
+		completion_reward = {
+			unlock_national_focus = IMP_council_dialogue_asia_china
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_WIP
+		icon = GFX_IMP_start_small_crusade
+		x = 11
+		y = 22
+		cost = 3
+		prerequisite = {
+			focus = IMP_fin_war_japan
+		}
+		prerequisite = {
+			focus = IMP_final_with_china
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_more_navy
+		icon = GFX_IMP_financial_reforms
+		x = 5
+		y = 19
+		cost = 3
+		prerequisite = {
+			focus = IMP_attack_japan
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_ideas = imp_navy_build
+			custom_effect_tooltip = better_navy_ideas
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_construct_navy_with_fabrics
+		icon = GFX_IMP_financial_reforms
+		x = 7
+		y = 19
+		cost = 3
+		prerequisite = {
+			focus = IMP_attack_japan
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mio_cat_tech_all_screen_ship_and_modules
+				bonus = 2
+				uses = 2
+			}
+			add_tech_bonus = {
+				category = mio_cat_tech_all_screen_ship_and_modules
+				bonus = 2
+				uses = 2
+			}
+			custom_effect_tooltip = construct_navy_with_fabrics.tt
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_council_dialogue_asia_china
+		icon = GFX_IMP_start_small_crusade
+		x = 16
+		y = 15
+		cost = 20
+		prerequisite = {
+			focus = IMP_council_dialogue_asia
+		}
+		available = {
+			always = no
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_infrastructure_for_china
+		icon = GFX_IMP_infrastructure_generic
+		x = 18
+		y = 16
+		cost = 3
+		prerequisite = {
+			focus = IMP_council_dialogue_asia_china
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			build_railway = {
+				path = { 7940 12846 4536 12815 11448 10787 }
+				level = 2
+			}
+			build_railway = {
+				path = { 7940 12846 4536 10490 12732 }
+				level = 2
+			}
+			build_railway = {
+				path = { 12732 1630 6638 556 }
+				level = 2
+			}
+			753 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 10787
+				}
+			}
+			754 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 12732
+				}
+			}
+			283 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 556
+				}
+			}
+			if = {
+				limit = { NOT = { country_exists = PRC } }
+				build_railway = {
+					path = { 556 5025 517 8049}
+					level = 2
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							country_exists = PRC
+						}
+						NOT = {
+							country_exists = SHX
+						}
+					}
+				}
+				build_railway = {
+					path = { 8049 7208 1034 4634 1519 }
+					level = 2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_china_mobilize_more
+		icon = GFX_IMP_recruitment_of_the_first_divisions
+		x = 16
+		y = 16
+		cost = 3
+		prerequisite = {
+			focus = IMP_council_dialogue_asia_china
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_manpower = 500000
+			load_oob = IMP_china_war
+			add_stability = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_china_start_war
+		icon = GFX_IMP_start_small_crusade
+		x = 16
+		y = 17
+		cost = 3
+		prerequisite = {
+			focus = IMP_china_mobilize_more
+		}
+		prerequisite = {
+			focus = IMP_infrastructure_for_china
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.13
+				days = 1
+			}
+			add_war_support = 0.1
+			#activate_mission = 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_deal_jap
+		icon = GFX_IMP_financial_reforms
+		x = 16
+		y = 18
+		cost = 5
+		bypass = {
+			NOT = {
+				country_exists = JAP
+			}
+		}
+		prerequisite = {
+			focus = IMP_china_start_war
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			country_event = { 
+				id = imperium.14
+				days = 1
+			}
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_war_with_china_end
+		icon = GFX_IMP_infrastructure_generic
+		x = 17
+		y = 19
+		cost = 5
+		prerequisite = {
+			focus = IMP_deal_jap
+		}
+		available = {
+			AND = {
+				NOT = {
+					country_exists = CHI
+				}
+				has_full_control_of_state = 613
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = imp_small_win
+				add_idea = imp_medium_win
+			}
+			add_ideas = imp_full_control
+			hidden_effect = {
+				transfer_state = 622
+				transfer_state = 746
+				transfer_state = 621
+				transfer_state = 615
+				transfer_state = 747
+				transfer_state = 325
+				transfer_state = 599
+				transfer_state = 593
+				transfer_state = 594
+				transfer_state = 592
+				transfer_state = 591
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_develop_our_west
+		icon = GFX_IMP_financial_reforms
+		x = 16
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_war_with_china_end
+		}
+		available = {
+			AND = {
+				has_full_control_of_state = 617
+				has_full_control_of_state = 754
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = develop_west.tt
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_final_with_china
+		icon = GFX_IMP_infrastructure_generic
+		x = 16
+		y = 21
+		cost = 5
+		bypass = {
+			has_completed_focus	= IMP_council_dialogue_asia_japan
+		}
+		prerequisite = {
+			focus = IMP_develop_our_east
+		}
+		prerequisite = {
+			focus = IMP_develop_our_west
+		}
+		prerequisite = {
+			focus = IMP_develop_our_north
+		}
+		prerequisite = {
+			focus = IMP_develop_our_south
+		}
+		available = {
+			613 = {
+				is_core_of = IMP
+			}
+		}
+		completion_reward = {
+			unlock_national_focus = IMP_council_dialogue_asia_japan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_develop_our_east
+		icon = GFX_IMP_financial_reforms
+		x = 18
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_war_with_china_end
+		}
+		available = {
+			has_full_control_of_state = 613
+		}
+		completion_reward = {
+			custom_effect_tooltip = develop_east.tt
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_develop_our_north
+		icon = GFX_IMP_financial_reforms
+		x = 20
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_war_with_china_end
+		}
+		available = {
+			has_full_control_of_state = 621
+		}
+		completion_reward = {
+			custom_effect_tooltip = develop_north.tt
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_develop_our_south
+		icon = GFX_IMP_financial_reforms
+		x = 22
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_war_with_china_end
+		}
+		available = {
+			has_full_control_of_state = 621
+		}
+		completion_reward = {
+			custom_effect_tooltip = develop_south.tt
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_too_many_chinese
+		icon = GFX_IMP_infrastructure_generic
+		x = 18
+		y = 18
+		cost = 5
+		prerequisite = {
+			focus = IMP_china_start_war
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+				imp_flamer_1 = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_new_tech_for_tanks
+		icon = GFX_IMP_tanks_project
+		x = 9
+		y = 16
+		cost = 5
+		prerequisite = {
+			focus = IMP_council_dialogue_asia_china
+			focus = IMP_council_dialogue_asia_japan
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_medium_tanks
+		icon = GFX_IMP_tanks_project
+		x = 9
+		y = 17
+		cost = 5
+		prerequisite = {
+			focus = IMP_new_tech_for_tanks
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+    			imp_basic_medium_tank_chassis = 1
+				imp_punisher_1 = 1
+			}
+			create_equipment_variant = {
+				name = "Leman Russ Punisher"
+				type = iom_medium_tank_chassis_1
+				icon = "GFX_IMP_medium_AAB"
+				modules = {
+					turret_type_slot = tank_medium_one_man_tank_turret
+					main_armament_slot = imp_punisher_gun
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = ablative_armor
+					engine_type_slot = martian_template_engine
+					special_type_slot_1 = imp_tank_bolt_gun
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_more_medium_tanks
+		icon = GFX_IMP_tanks_project
+		x = 8
+		y = 18
+		cost = 5
+		prerequisite = {
+			focus = IMP_medium_tanks
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			759 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			616 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			754 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_resources_for_medium_tanks
+		icon = GFX_IMP_tanks_project
+		x = 10
+		y = 18
+		cost = 5
+		prerequisite = {
+			focus = IMP_medium_tanks
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = excavation_tech
+				bonus = 2
+				uses = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_advanved_medium_tanks
+		icon = GFX_IMP_tanks_project
+		x = 9
+		y = 19
+		cost = 5
+		prerequisite = {
+			focus = IMP_more_medium_tanks
+			focus = IMP_resources_for_medium_tanks
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mio_cat_tech_medium_armor_and_modules
+				bonus = 2
+				uses = 2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_heavy_tanks
+		icon = GFX_IMP_tanks_project
+		x = 9
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_advanved_medium_tanks
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_heavy_armor
+				bonus = 2
+				uses = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_new_tech_for_aviation
+		icon = GFX_IMP_infrastructure_generic
+		x = 13
+		y = 16
+		cost = 5
+		prerequisite = {
+			focus = IMP_council_dialogue_asia_china
+			focus = IMP_council_dialogue_asia_japan
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_asia_planes
+		icon = GFX_IMP_infrastructure_generic
+		x = 13
+		y = 17
+		cost = 5
+		prerequisite = {
+			focus = IMP_new_tech_for_aviation
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			set_technology = {
+    			imp_iw_small_airframe = 1
+				imp_bolters = 1
+				imp_small_engines = 1
+			}
+			air_experience = 20
+			create_equipment_variant = {
+				name = "Lightning"
+				type = iom_small_plane_airframe_0
+				#icon = "GFX_IMP_light_AAB"
+				modules = {
+					fixed_main_weapon_slot = bolters_2x
+					engine_type_slot = f100_engine_1x
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_asia_planes_infrastructure
+		icon = GFX_IMP_infrastructure_generic
+		x = 12
+		y = 18
+		cost = 5
+		prerequisite = {
+			focus = IMP_asia_planes
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			air_experience = 20
+			753 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+			283 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_asia_planes_fabrics
+		icon = GFX_IMP_infrastructure_generic
+		x = 13
+		y = 19
+		cost = 5
+		prerequisite = {
+			focus = IMP_asia_planes_infrastructure
+		}
+		prerequisite = {
+			focus = IMP_asia_planes_ruber
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			604 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			617 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			756 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_asia_planes_bombers
+		icon = GFX_IMP_infrastructure_generic
+		x = 12
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_asia_planes_fabrics
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				category = heavy_air
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				category = cat_air_bombs
+				bonus = 1
+				uses = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = IMP_asia_planes_cat
+		icon = GFX_IMP_infrastructure_generic
+		x = 14
+		y = 20
+		cost = 5
+		prerequisite = {
+			focus = IMP_asia_planes_fabrics
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			air_experience = 20
+			add_tech_bonus = {
+				category = medium_air
+				bonus = 1
+				uses = 1
+			}
+			add_tech_bonus = {
+				category = cas_bomber
+				bonus = 1
+				uses = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = IMP_asia_planes_ruber
+		icon = GFX_IMP_infrastructure_generic
+		x = 14
+		y = 18
+		cost = 5
+		prerequisite = {
+			focus = IMP_asia_planes
+		}
+		available = {
+			has_government = imperialism
+		}
+		completion_reward = {
+			air_experience = 20
+			set_technology = {
+				imp_fuel_silos = 1
+				imp_synth_oil_experiments = 1
+			}
+			add_tech_bonus = {
+				category = synth_resources
+				bonus = 0.5
+				uses = 1
+			}
+			970 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+				}
+			}
+			757 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	focus = {
 		id = IMP_resources_steel
 		icon = GFX_IMP_resources_steel
@@ -1244,13 +2141,15 @@ focus_tree = {
 			}
 			add_equipment_to_stockpile = {
 				type = train_equipment
-				amount = 35
+				amount = 50
 			}
 			build_railway = {
 				path = { 1961 8029 1991 8121 4994 5033 }
+				level = 3
 			}
 			build_railway = {
 				path = { 8029 12784 2010 }
+				level = 3
 			}
 			322 = {
 				add_building_construction = {

@@ -1500,48 +1500,32 @@ country_event = {
 
 	option = {
 		name = china.205.a
-		601 = {
-			transfer_state_to = IMP
-		}
-		752 = {
-			transfer_state_to = IMP
-		}
-		751 = {
-			transfer_state_to = IMP
+		if = {
+			limit = {
+				AND = {
+					has_full_control_of_state = 596
+					has_full_control_of_state = 595
+				}
+			}
+			IMP = {
+				transfer_state = 596
+				transfer_state = 595
+				country_event = imperium.19
+			}
 		}
 		ai_chance = {
 			base = 10
 		}
-		IMP = {
-			set_country_flag = china_yes
-		}
+		
 	}
 
 	option = {
 		name = china.205.b
-	}
-}
-
-country_event = {
-	id = china.206
-	title = china.206.t
-	desc = china.206.d
-	picture = GFX_report_event_chinese_soldiers
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = china.206.a
-		add_political_power = 200
 		ai_chance = {
-			base = 1
+			base = 0
 		}
-	}
-
-	option = {
-		name = china.206.b
-		declare_war_on = {
-			target = IMP
+		IMP = {
+			country_event = imperium.20
 		}
 	}
 }

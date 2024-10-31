@@ -43,3 +43,33 @@ IMP_dig_more_cat = {
 		has_completed_focus = IMP_dig_more
 	}
 }
+
+IMP_development = {
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_war_with_china_end
+	}
+}
+
+IMP_war_missions = {
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_council_dialogue2
+	}
+}
+
+IMP_navy = {
+	allowed = {
+		original_tag = IMP
+	}
+
+	visible = {
+		has_completed_focus = IMP_more_navy
+	}
+}

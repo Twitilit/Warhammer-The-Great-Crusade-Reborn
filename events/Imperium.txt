@@ -145,6 +145,14 @@ country_event = {
             target = SHX
             type = annex_everything
         }
+        hidden_effect = {
+            SHX = {
+                leave_faction = yes
+                set_rule = {
+                    can_join_factions = no
+                }
+            }
+        }
     }
     option = {
         name = imperium.9.b
@@ -169,6 +177,14 @@ country_event = {
             target = PRC
             type = annex_everything
         }
+        hidden_effect = {
+            PRC = {
+                leave_faction = yes
+                set_rule = {
+                    can_join_factions = no
+                }
+            }
+        }
     }
     option = {
         name = imperium.10.b
@@ -180,7 +196,7 @@ country_event = {
 }
 
 country_event = {
-    id = imperium.11
+    id = imperium.11 #Вилка
     title = imperium.11.t
     desc = imperium.11.d
     picture = GFX_event_decision_making
@@ -189,11 +205,169 @@ country_event = {
 
     option = {
         name = imperium.11.a
-        add_political_power = 50
+        #Asia
+        complete_national_focus = IMP_council_dialogue_asia
     }
     option = {
         name = imperium.11.b
-        add_political_power = 50
+        #India
+        #complete_national_focus = 
+    }
+    option = {
+        name = imperium.11.c
+        #Russia
+        #complete_national_focus = 
+    }
+}
+
+country_event = {
+    id = imperium.12 #Вилка2
+    title = imperium.12.t
+    desc = imperium.12.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.12.a
+        #China
+        complete_national_focus = IMP_council_dialogue_asia_china
+    }
+    option = {
+        name = imperium.12.b
+        #Japan
+        complete_national_focus = IMP_council_dialogue_asia_japan
+    }
+}
+
+country_event = {
+    id = imperium.13 #WAR WITH CHINA
+    title = imperium.13.t
+    desc = imperium.13.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.13.a
+        #China
+        declare_war_on = {
+            target = CHI
+            type = annex_everything
+        }
+    }
+}
+
+country_event = {
+    id = imperium.14 #BUY TAIWAN
+    title = imperium.14.t
+    desc = imperium.14.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.14.a
+        #JAPAN
+        JAP = {
+            country_event = {
+                id = japan.19
+                days = 1
+            }
+        }
+        custom_effect_tooltip = jap_deal.tt
+    }
+}
+
+country_event = {
+    id = imperium.15 #BUY TAIWAN
+    title = imperium.15.t
+    desc = imperium.15.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.15.a
+        #ARMY
+        load_oob = imp_taiwan
+        set_technology = {
+            mtg_transport = 1
+        }
+    }
+}
+
+country_event = {
+    id = imperium.16 #NO BUY TAIWAN
+    title = imperium.16.t
+    desc = imperium.16.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.16.a
+        #NO
+        add_political_power = -50
+    }
+}
+
+country_event = {
+    id = imperium.17 #FULLCHINAUNDERCONTROL
+    title = imperium.17.t
+    desc = imperium.17.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.17.a
+        custom_effect_tooltip = china_under_control.tt
+        hidden_effect = {
+            add_state_core = 615
+            add_state_core = 608
+            add_state_core = 614
+            add_state_core = 597
+            add_state_core = 607
+            add_state_core = 598
+            add_state_core = 606
+            add_state_core = 613
+            add_state_core = 749
+            add_state_core = 596
+            add_state_core = 595
+            add_state_core = 600
+            add_state_core = 620
+            add_state_core = 602
+            add_state_core = 593
+            add_state_core = 599
+            add_state_core = 592
+            add_state_core = 594
+            add_state_core = 591
+            add_state_core = 325
+            add_state_core = 747
+            add_state_core = 751
+            add_state_core = 752
+            add_state_core = 601
+            add_state_core = 605
+            add_state_core = 748
+            add_state_core = 603
+            add_state_core = 750
+            add_state_core = 744
+        }
+    }
+}
+
+country_event = {
+    id = imperium.18 #BUY CHINA
+    title = imperium.18.t
+    desc = imperium.18.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.18.a
+        #JAPAN
         CHI = {
             country_event = {
                 id = china.205
@@ -204,99 +378,127 @@ country_event = {
 }
 
 country_event = {
-    id = imperium.13
-    title = imperium.13.t
-    desc = imperium.13.d
-    picture = GFX_event_decision_making
-    is_triggered_only = no
-    fire_only_once = yes
-    trigger ={
-        AND = {
-            CHI = {
-                has_defensive_war_with = JAP
-            }
-            has_country_flag = china_yes
-        }
-    }
-
-    option = {
-        name = imperium.13.a
-        add_war_support = 0.1
-        declare_war_on = {
-            target = JAP
-            type = annex_everything
-        }
-    }
-    option = {
-        name = imperium.13.b
-        add_political_power = -300
-        add_war_support = -0.2
-        add_stability = -0.2
-        CHI = {
-            country_event = {
-                id = china.206
-                days = 1
-            }
-        }
-    }
-}
-
-country_event = {
-    id = imperium.12
-    title = imperium.12.t
-    desc = imperium.12.d
+    id = imperium.19 #YES BUY CHINA
+    title = imperium.19.t
+    desc = imperium.19.d
     picture = GFX_event_decision_making
     is_triggered_only = yes
     fire_only_once = yes
 
     option = {
-        name = imperium.14.a
-        add_political_power = 50
+        name = imperium.19.a
+        load_oob = IMP_595_troops
+    }
+}
+
+country_event = {
+    id = imperium.20 #NO BUY CHINA
+    title = imperium.20.t
+    desc = imperium.20.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.20.a
+        add_political_power = -50
+    }
+}
+
+country_event = {
+    id = imperium.21 #BUY SHIPS
+    title = imperium.21.t
+    desc = imperium.21.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        trigger = {
+            NOT = {
+                has_country_flag = usa_no
+            }
+        }
+        name = imperium.21.a
+        #USA
+        USA = {
+            country_event = usa.177
+        }
     }
     option = {
-        name = imperium.14.b
-        add_political_power = 50
-        JAP = {
-            country_event = {
-                id = japan.19
-                days = 1
+        trigger = {
+            NOT = {
+                has_country_flag = britani_no
             }
+        }
+        name = imperium.21.b
+        #BRITAIN
+        ENG = {
+            country_event = britain.28
         }
     }
 }
 
 country_event = {
-    id = imperium.14
-    title = imperium.14.t
-    desc = imperium.14.d
+    id = imperium.22 #SHIPS FROM USA YES
+    title = imperium.22.t
+    desc = imperium.22.d
     picture = GFX_event_decision_making
-    is_triggered_only = no
+    is_triggered_only = yes
     fire_only_once = yes
-    trigger ={
-        JAP = {
-            has_offensive_war_with = CHI
-        }
-        has_country_flag = japan_yes
-    }
 
     option = {
-        name = imperium.14.a
-        add_war_support = 0.1
-        declare_war_on = {
-            target = CHI
-            type = annex_everything
+        name = imperium.22.a
+        navy_experience = 50
+    }
+}
+
+country_event = {
+    id = imperium.23 #SHIPS FROM USA NO
+    title = imperium.23.t
+    desc = imperium.23.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.23.a
+        add_political_power = -50
+        country_event = imperium.21
+        hidden_effect = {
+            set_country_flag = usa_no
         }
     }
+}
+
+country_event = {
+    id = imperium.24 #SHIPS FROM BRI YES
+    title = imperium.24.t
+    desc = imperium.24.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
     option = {
-        name = imperium.14.b
-        add_political_power = -300
-        add_war_support = -0.2
-        add_stability = -0.2
-        JAP = {
-            country_event = {
-                id = japan.20
-                days = 1
-            }
+        name = imperium.24.a
+        navy_experience = 50
+    }
+}
+
+country_event = {
+    id = imperium.25 #SHIPS FROM USA NO
+    title = imperium.25.t
+    desc = imperium.25.d
+    picture = GFX_event_decision_making
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = imperium.25.a
+        add_political_power = -50
+        country_event = imperium.21
+        hidden_effect = {
+            set_country_flag = britani_no
         }
     }
 }

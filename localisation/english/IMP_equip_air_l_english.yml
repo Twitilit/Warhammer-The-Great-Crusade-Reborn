@@ -1,4 +1,7 @@
 ﻿l_english:
+ imp_bba_air_techs_folder: "Imperial Aviation"
+ imp_bba_air_techs_folder_desc: "The aircraft of the Imperium have no equal in the world!"
+
  iom_fighter: "Fighter"
  iom_fighter_equipment_desc: "Fighters are fast, maneuverable aircraft suitable for a range of tasks, including air superiority, escorting allied bombers, and intercepting enemy bombers."
  iom_cv_fighter: "Carrier Fighter"

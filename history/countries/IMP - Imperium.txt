@@ -8,7 +8,22 @@ set_technology = {
 	iom_heavy_infantry_equipment = 1
 	imp_artillery = 1
 }
-
+add_equipment_to_stockpile = {
+	type = imp_infantry_equipment_0
+	amount = 10000
+}
+add_equipment_to_stockpile = {
+	type = infantry_armour_equipment_0
+	amount = 10000
+}
+add_equipment_to_stockpile = {
+	type = imp_heavy_infantry_equipment_0
+	amount = 2000
+}
+add_equipment_to_stockpile = {
+	type = custodes_armor_equipment_0
+	amount = 2000
+}
 set_war_support = 0.05
 set_stability = 0.05
 set_oob = "IMP_1936"

@@ -1,5 +1,5 @@
 division_template = {
-	name = "Astra Militarum"
+	name = "Astra Militarum (China)"
     
     is_locked = no
 
@@ -11,13 +11,17 @@ division_template = {
         imperial_infantry = { x = 0 y = 2 }
 		imperial_infantry = { x = 1 y = 2 }
 	}
+	support = {
+		heavy_imperial_infantry = { x = 0 y = 0}
+		imp_engineer = { x = 0 y = 1 }
+	}
 }
 
 units = {
     division= {
         name = "1st China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -25,7 +29,7 @@ units = {
     division= {
         name = "2nd China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -33,7 +37,7 @@ units = {
     division= {
         name = "3rd China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -41,7 +45,7 @@ units = {
     division= {
         name = "4th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -49,7 +53,7 @@ units = {
     division= {
         name = "5th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -57,7 +61,7 @@ units = {
     division= {
         name = "6th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -65,7 +69,7 @@ units = {
     division= {
         name = "7th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -73,7 +77,7 @@ units = {
     division= {
         name = "8th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -81,7 +85,7 @@ units = {
     division= {
         name = "9th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -89,7 +93,7 @@ units = {
     division= {
         name = "10th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -97,7 +101,7 @@ units = {
     division= {
         name = "11th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1
@@ -105,63 +109,7 @@ units = {
     division= {
         name = "12th China Regiment"
         location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "13th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "14th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "15th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "16th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "17th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "18th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
-        start_experience_factor = 0.2
-        start_equipment_factor = 1
-        start_manpower_factor = 1
-    }
-    division= {
-        name = "19th Terran Regiment"
-        location = 1961
-        division_template = "Astra Militarum"
+        division_template = "Astra Militarum (China)"
         start_experience_factor = 0.2
         start_equipment_factor = 1
         start_manpower_factor = 1

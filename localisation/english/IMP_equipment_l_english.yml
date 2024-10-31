@@ -2,6 +2,7 @@
  las_infantry_weapons: "Lasgun Weapons"
  infantry_armor: "Flak Armor"
  imp_infantry_equipment: "Lasguns"
+ iom_infantry_equipment: "Lasguns"
  imp_heavy_infantry_equipment: "Heavy Lasguns"
  imp_sniper_infantry_equipment: "Longlas"
  custodes_armor_equipment: "Custodes Armor"
@@ -18,5 +19,10 @@
  iom_artillery_equipment: "Imperial artillery"
  iom_anti_tank_equipment: "Imperial AT Artillery"
  iom_anti_air_equipment: "Imperial AA Artillery"
+ iom_infantry_weapons: "Kantrael Lasgun"
+ iom_heavyb_infantry_weapons: "Ryza Lasrifle"
+ tank_designer_iom_light_tank_chassis: "Light tank"
+ imperium_consciption: "Imperium Conscription"
+ 
 
  

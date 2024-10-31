@@ -2,6 +2,7 @@
  las_infantry_weapons: "Лазерное оружие"
  infantry_armor: "Флак-броня"
  imp_infantry_equipment: "Лазганы"
+ iom_infantry_equipment: "Лазганы"
  imp_heavy_infantry_equipment: "Тяжёлые лазганы"
  imp_sniper_infantry_equipment: "Лонглазы"
  custodes_armor_equipment: "Броня кустодес"
@@ -19,3 +20,5 @@
  iom_artillery_equipment: "Имперская артиллерия"
  iom_anti_tank_equipment: "Имперская ПТ-артиллерия"
  iom_anti_air_equipment: "Имперская ЗСУ"
+ iom_infantry_weapons: "Лазган Кантраэль"
+ iom_heavyb_infantry_weapons: "Лазвинтовка Риза"

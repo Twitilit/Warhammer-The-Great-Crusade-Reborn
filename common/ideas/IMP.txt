@@ -49,7 +49,101 @@ ideas = {
 
 			modifier = {
 				imperialism_drift = 0.2
-				political_power_cost = -0.5
+				political_power_gain = 0.5
+			}
+		}
+
+		imp_medium_win = {
+			allowed = {
+				always = no
+			}
+			picture = small_win
+
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				imperialism_drift = 1
+				political_power_gain = 1
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+			}
+		}
+
+		imp_full_control = {
+			allowed = {
+				always = no
+			}
+			picture = small_win
+
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = -0.2
+			}
+		}
+
+		imp_navy_build = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				experience_gain_navy = 0.05
+			}
+		}
+
+		imp_navy_build2 = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+				experience_gain_navy = 0.1
+			}
+		}
+
+		imp_navy_build3 = {
+			allowed = {
+				always = no
+			}
+			picture = new_infrastructure
+
+			allowed_civil_war = {
+				has_government = imperialism
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_dockyard_factor = 0.3
+				industrial_capacity_dockyard = 0.3
+				experience_gain_navy = 0.5
 			}
 		}
 
@@ -160,7 +254,7 @@ ideas = {
 			}
 			removal_cost = -1
 			equipment_bonus = {
-				iom_infantry_equipment = {
+				imp_infantry_equipment = {
 					build_cost_ic = -0.2
 				}
 				infantry_armour_equipment = {
