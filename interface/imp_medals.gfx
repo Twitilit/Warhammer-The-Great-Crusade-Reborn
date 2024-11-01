@@ -1,0 +1,88 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_medal_icon_imp"
+		texturefile = "gfx/interface/medals/imp_medals.dds"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_medal_icon_imp_large"
+		texturefile = "gfx/interface/medals/imp_medals_large.dds"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_honourifica"
+		texturefile = "gfx/interface/medals/imp_medal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_machariancross"
+		texturefile = "gfx/interface/medals/imp_medal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_crimson"
+		texturefile = "gfx/interface/medals/imp_medal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_eagleordinary"
+		texturefile = "gfx/interface/medals/imp_medal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_scarletwing"
+		texturefile = "gfx/interface/medals/imp_medal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_wingedskull"
+		texturefile = "gfx/interface/medals/imp_medal_6.dds"
+	}
+	spriteType = {
+		name = "GFX_tripleskull"
+		texturefile = "gfx/interface/medals/imp_medal_7.dds"
+	}
+	spriteType = {
+		name = "GFX_ribbonintrinsic"
+		texturefile = "gfx/interface/medals/imp_medal_8.dds"
+	}
+	spriteType = {
+		name = "GFX_meritofterra"
+		texturefile = "gfx/interface/medals/imp_medal_9.dds"
+	}
+	spriteType = {
+		name = "GFX_meritofthehighlords"
+		texturefile = "gfx/interface/medals/imp_medal_10.dds"
+	}
+	spriteType = {
+		name = "GFX_steelaquila"
+		texturefile = "gfx/interface/medals/imp_medal_11.dds"
+	}
+	spriteType = {
+		name = "GFX_orderoftheeagleclaw"
+		texturefile = "gfx/interface/medals/imp_medal_12.dds"
+	}
+	spriteType = {
+		name = "GFX_knightofmedusa"
+		texturefile = "gfx/interface/medals/imp_medal_13.dds"
+	}
+	spriteType = {
+		name = "GFX_medusanlaureate"
+		texturefile = "gfx/interface/medals/imp_medal_14.dds"
+	}
+	spriteType = {
+		name = "GFX_orderofthestorm"
+		texturefile = "gfx/interface/medals/imp_medal_15.dds"
+	}
+	spriteType = {
+		name = "GFX_crimsonskull"
+		texturefile = "gfx/interface/medals/imp_medal_16.dds"
+	}
+	spriteType = {
+		name = "GFX_valorisimperator"
+		texturefile = "gfx/interface/medals/imp_medal_17.dds"
+	}
+	spriteType = {
+		name = "GFX_administratummedal"
+		texturefile = "gfx/interface/medals/imp_medal_18.dds"
+	}
+	spriteType = {
+		name = "GFX_medusastar"
+		texturefile = "gfx/interface/medals/imp_medal_19.dds"
+	}
+}

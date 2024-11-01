@@ -1,0 +1,424 @@
+# Valid unit modifiers are not exhaustive
+# Currently supported:
+# army_morale
+# army_morale_factor
+# army_org
+# army_org_factor
+# supply_consumption_factor
+# equipment_capture
+# equipment_capture_factor
+# army_fuel_capacity_factor
+# army_fuel_consumption_factor
+# recon_factor
+# recon_factor_while_entrenched
+# transport_capacity (?)
+# breakthrough_factor
+# armor_factor
+# army_strength_factor
+# experience_loss_factor
+# leader_modifier applies unit modifiers to all units under them as a general, similarly to traits.
+# army_attack_factor
+# army_defence_factor
+# max_dig_in
+# max_dig_in_factor
+@cost = 30
+
+unit_medals = {
+	honourifica = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 1
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			breakthrough_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	machariancross = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 2
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	crimson = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 3
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale = 0.15
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	eagleordinary = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 4
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_morale = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	scarletwing = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 5
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	wingedskull = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 6
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_attack_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	tripleskull = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 7
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			max_dig_in_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	ribbonintrinsic = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 8
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	meritofterra = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 9
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.15
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	meritofthehighlords = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 10
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.2
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	steelaquila = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 11
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_org_factor = 0.2
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	orderoftheeagleclaw = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 12
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.2
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	knightofmedusa = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 13
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.15
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	medusanlaureate = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 14
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.1
+			experience_loss_factor = -0.07
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	orderofthestorm = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 15
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_strength_factor = 0.15
+			experience_loss_factor = -0.1
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	crimsonskull = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 16
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			experience_loss_factor = -0.5
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	valorisimperator = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 17
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_fuel_consumption_factor = -0.2
+			experience_loss_factor = -0.1
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	administratummedal = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 18
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.2
+			experience_loss_factor = -0.2
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+
+	medusastar = { #Astra Militarum
+		
+		available = {
+			should_have_imperium_medals_trigger = yes
+		}
+
+		frame = 19
+		icon = "GFX_medal_icon_imp"
+		
+		cost = @cost
+		
+		unit_modifiers = {
+			army_defence_factor = 0.1
+			army_attack_factor = 0.1
+		}
+
+		one_time_effect = {
+			add_divisional_commander_xp = 100
+		}
+	}
+}
